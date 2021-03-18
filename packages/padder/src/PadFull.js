@@ -1,15 +1,16 @@
-import { FullWidth, isNumeric as isNumericFull } from '@texting/charset-fullwidth'
-import { SP as SP_FULL }                         from '@texting/enum-chars-fullwidth'
-import { nullish }                               from '@typen/nullish'
-import { isNumeric }                             from '@typen/num-strict'
-import { ansiPadLength }                         from '../utils/ansiPadLength'
-import { lpad }                                  from '../utils/LPad'
-import { rpad }                                  from '../utils/RPad'
-import { pad as padHalf }                        from './Pad'
+import { isNumeric as isNumericFull } from '@texting/charset-fullwidth'
+import { HalfToFull }                 from '@texting/charset-halfwidth'
+import { SP as SP_FULL }              from '@texting/enum-chars-fullwidth'
+import { nullish }                    from '@typen/nullish'
+import { isNumeric }                  from '@typen/num-strict'
+import { ansiPadLength }              from '../utils/ansiPadLength'
+import { lpad }                       from '../utils/LPad'
+import { rpad }                       from '../utils/RPad'
+import { pad as padHalf }             from './Pad'
 
 export const padFull = function (tx, wd, va) {
   const { ansi = true, fill = SP_FULL } = this ?? {}
-  const padder = (!nullish(va) ? isNumeric(va) : isNumericFull(tx)) ? lpad : rpad
+  const padder = (nullish(va) ? isNumericFull(tx) : isNumeric(va)) ? lpad : rpad
   return ansi
     ? padder(tx, ansiPadLength(tx, wd), fill)
     : padder(tx, wd, fill)
@@ -33,8 +34,8 @@ export const PadFull = (configHalf = {}, configFull = {}) => {
   const
     padderHalf = padHalf.bind(configHalf), // use: ansi, fill, thousand
     padderFull = padFull.bind(configFull), // use: ansi, fill
-    toFull = FullWidth(configFull) // use: ansi lean
+    halfToFull = HalfToFull(configFull) // use: ansi lean
   return (text, width, full) => full
-    ? padderFull(toFull(text), width)
+    ? padderFull(halfToFull(text), width)
     : padderHalf(text, width)
 }

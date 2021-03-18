@@ -6,6 +6,8 @@ var charsetAnsi = require('@texting/charset-ansi');
 var lange = require('@texting/lange');
 var numStrict = require('@typen/num-strict');
 var charsetFullwidth = require('@texting/charset-fullwidth');
+var charsetHalfwidth = require('@texting/charset-halfwidth');
+var enumCharsFullwidth = require('@texting/enum-chars-fullwidth');
 
 const ansiPadLength = (tx, pd) => charsetAnsi.hasAnsi(tx) ? tx.length + pd - lange.lange(tx) : pd; // export const lpad = String.prototype.padStart
 // export const rpad = String.prototype.padEnd
@@ -22,7 +24,7 @@ const RPad = ({
   fill
 } = {}) => ansi ? (tx, pd) => rpad(tx, ansiPadLength(tx, pd), fill) : (tx, pd) => rpad(tx, pd, fill);
 
-const SP$1 = ' ';
+const SP = ' ';
 
 const COMMA = /,/g;
 const clean = tx => {
@@ -33,7 +35,7 @@ const clean = tx => {
 const pad = function (tx, wd, va) {
   const {
     ansi = true,
-    fill = SP$1,
+    fill = SP,
     thousand = true
   } = this !== null && this !== void 0 ? this : {};
   const padder = numStrict.isNumeric(va !== null && va !== void 0 ? va : thousand ? clean(tx) : tx) ? lpad : rpad;
@@ -51,16 +53,14 @@ const pad = function (tx, wd, va) {
 
 const Pad = (config = {}) => pad.bind(config);
 
-const SP = '　';
-
 const nullish = x => x === null || x === void 0;
 
 const padFull = function (tx, wd, va) {
   const {
     ansi = true,
-    fill = SP
+    fill = enumCharsFullwidth.SP
   } = this !== null && this !== void 0 ? this : {};
-  const padder = (!nullish(va) ? numStrict.isNumeric(va) : charsetFullwidth.isNumeric(tx)) ? lpad : rpad;
+  const padder = (nullish(va) ? charsetFullwidth.isNumeric(tx) : numStrict.isNumeric(va)) ? lpad : rpad;
   return ansi ? padder(tx, ansiPadLength(tx, wd), fill) : padder(tx, wd, fill);
 };
 /**
@@ -83,9 +83,9 @@ const PadFull = (configHalf = {}, configFull = {}) => {
         // use: ansi, fill, thousand
   padderFull = padFull.bind(configFull),
         // use: ansi, fill
-  toFull = charsetFullwidth.FullWidth(configFull); // use: ansi lean
+  halfToFull = charsetHalfwidth.HalfToFull(configFull); // use: ansi lean
 
-  return (text, width, full) => full ? padderFull(toFull(text), width) : padderHalf(text, width);
+  return (text, width, full) => full ? padderFull(halfToFull(text), width) : padderHalf(text, width);
 };
 
 const LEFT = -1;
