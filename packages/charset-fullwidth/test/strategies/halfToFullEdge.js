@@ -1,4 +1,4 @@
-import { SP }                   from '@texting/enum-full-angle-chars'
+import { SP }                   from '@texting/enum-chars-fullwidth'
 import { DELTA_FULL, REG_HALF } from '../../assets/regex'
 
 /**

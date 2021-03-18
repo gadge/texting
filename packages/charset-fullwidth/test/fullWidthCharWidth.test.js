@@ -1,6 +1,6 @@
 import { delogger }                     from '@spare/deco'
 import { DA, SP }                       from '@texting/enum-chars'
-import { DA as DA_FULL, SP as SP_FULL } from '@texting/enum-full-angle-chars'
+import { DA as DA_FULL, SP as SP_FULL } from '@texting/enum-chars-fullwidth'
 import { APOS }                         from '@texting/enum-quotes'
 import { DecoObject }                   from '@spare/logger'
 

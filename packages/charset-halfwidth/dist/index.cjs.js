@@ -2,11 +2,59 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var regexCharset = require('@texting/regex-charset');
+var charsetAnsi = require('@texting/charset-ansi');
+var enumCharsFullwidth = require('@texting/enum-chars-fullwidth');
+require('@texting/regex-charset');
 
-const hasAnsi = tx => regexCharset.ANSI.test(tx);
+const DELTA_FULL = 0xfee0; // export const REG_NUM_FULL = /^\s*[－＋]?(?:，*[０-９]+)*．?[０-９]+\s*$/
 
-const hasAstral = tx => regexCharset.ASTRAL.test(tx);
+const LEAN_REG = /(\W)\s+/g;
+/**
+ * Half-angle string -> Full-angle string
+ * 半角转化为全角
+ * a.全角空格为12288，半角空格为32
+ * b.其他字符半角(33-126)与全角(65281-65374)的对应关系是：均相差65248
+ * @param {string} text
+ * @returns {string}
+ * @constructor
+ */
 
-exports.hasAnsi = hasAnsi;
-exports.hasAstral = hasAstral;
+const _halfToFullCore = text => {
+  let l = text === null || text === void 0 ? void 0 : text.length,
+      i = 0,
+      t = '',
+      n;
+
+  while (i < l && (n = text.charCodeAt(i))) {
+    t += n === 0x20 ? enumCharsFullwidth.SP : 0x20 < n && n < 0x7f ? String.fromCharCode(n + DELTA_FULL) : text[i];
+    i++;
+  }
+
+  return t;
+};
+const _halfToFull = function (tx) {
+  const {
+    ansi,
+    lean
+  } = this;
+  if (ansi && charsetAnsi.hasAnsi(tx)) tx = charsetAnsi.clearAnsi(tx);
+  if (lean) tx = tx.replace(LEAN_REG, (_, x) => x);
+  return _halfToFullCore(tx);
+};
+const halfToFull = (text, {
+  ansi = true,
+  lean = true
+} = {}) => _halfToFull.call({
+  ansi,
+  lean
+}, text);
+const HalfToFull = ({
+  ansi = true,
+  lean = true
+} = {}) => _halfToFull.bind({
+  ansi,
+  lean
+});
+
+exports.HalfToFull = HalfToFull;
+exports.halfToFull = halfToFull;

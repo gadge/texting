@@ -17,7 +17,7 @@
   "dependencies": {
     "@texting/charset-ansi": "^0.0.1",
     "@texting/enum-chars": "^0.0.1",
-    "@texting/enum-full-angle-chars": "^0.0.1",
+    "@texting/enum-chars-fullwidth": "^0.0.1",
     "@texting/lange": "^0.0.1"
   },
   "repository": {

@@ -1,7 +1,6 @@
 import { clearAnsi, hasAnsi } from '@texting/charset-ansi'
-import { SP }                 from '@texting/enum-full-angle-chars'
-import { DELTA_FULL }         from '../assets/regex'
-
+import { SP }                 from '@texting/enum-chars-fullwidth'
+import { DELTA_FULL }         from '../../charset-fullwidth/assets/regex'
 
 const LEAN_REG = /(\W)\s+/g
 
@@ -37,5 +36,5 @@ export const _halfToFull = function (tx) {
 export const halfToFull = (text, { ansi = true, lean = true } = {}) =>
   _halfToFull.call({ ansi, lean }, text)
 
-export const FullWidth = ({ ansi = true, lean = true } = {}) =>
+export const HalfToFull = ({ ansi = true, lean = true } = {}) =>
   _halfToFull.bind({ ansi, lean })

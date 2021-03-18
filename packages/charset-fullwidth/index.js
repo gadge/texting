@@ -1,3 +1,3 @@
-export { hasFull }               from './src/hasFull'
-export { FullWidth, halfToFull } from './src/HalfToFull'
-export { isNumeric }             from './src/isNumeric'
+export { hasFull }                from './src/hasFull'
+export { isNumeric }              from './src/isNumeric'
+export { FullToHalf, fullToHalf } from './src/FullToHalf'

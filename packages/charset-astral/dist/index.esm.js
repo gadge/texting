@@ -1,7 +1,7 @@
-import { ANSI, ASTRAL } from '@texting/regex-charset';
+import { ASTRAL_G, ASTRAL } from '@texting/regex-charset';
 
-const hasAnsi = tx => ANSI.test(tx);
+const clearAstral = tx => tx.replace(ASTRAL_G, '_');
 
 const hasAstral = tx => ASTRAL.test(tx);
 
-export { hasAnsi, hasAstral };
+export { clearAstral, hasAstral };

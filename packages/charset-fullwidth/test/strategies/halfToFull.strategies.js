@@ -1,7 +1,7 @@
 import { CrosTab }                      from '@analys/crostab'
 import { says }                         from '@palett/says'
 import { delogger }                     from '@spare/deco'
-import { SP }                           from '@texting/enum-full-angle-chars'
+import { SP }                           from '@texting/enum-chars-fullwidth'
 import { decoCrostab, decoSamples }     from '@spare/logger'
 import { strategies }                   from '@valjoux/strategies'
 import { DELTA_FULL, REG_SP, REG_HALF } from '../../assets/regex'

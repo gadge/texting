@@ -4,9 +4,9 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var regexCharset = require('@texting/regex-charset');
 
-const hasAnsi = tx => regexCharset.ANSI.test(tx);
+const clearAstral = tx => tx.replace(regexCharset.ASTRAL_G, '_');
 
 const hasAstral = tx => regexCharset.ASTRAL.test(tx);
 
-exports.hasAnsi = hasAnsi;
+exports.clearAstral = clearAstral;
 exports.hasAstral = hasAstral;
