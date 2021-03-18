@@ -31,7 +31,8 @@ export class Conv {
   }
   static fullChars = text => {
     let tx = '', i = 0, l = text.length, n
-    while (i < l && (n = text.charCodeAt(i++))) tx += CharConv.fullChars(n)
+    while (i < l && (n = text.charCodeAt(i++))) tx +=
+      CharConv.fullChars(n)
     return tx
   }
 }

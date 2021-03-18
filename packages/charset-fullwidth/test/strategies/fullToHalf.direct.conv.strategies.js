@@ -4,6 +4,7 @@ import { strategies }  from '@valjoux/strategies'
 import { init }        from '@vect/vector-init'
 import { REG_FULL }    from '../../assets/regex'
 import { FullToHalf }  from '../../src/FullToHalf'
+import { parseNum }    from '../../src/isNumeric'
 
 const NUM_FULL = /[\uff0b-\uff19]/g
 const NUM_FULL_G = /[\uff0b-\uff19]+/g
@@ -46,19 +47,9 @@ class FullToNumParser {
     const view = new Uint16Array(buff)
     for (let i = 0; i < hi; i++) view[i] = 0xFF & (text.charCodeAt(i) + 0x20)
     return String.fromCharCode.apply(null, view)
-    // function ab2str(buf) {
-    //   return String.fromCharCode.apply(null, new Uint16Array(buf))
-    // }
-    // function str2ab(text) {
-    //   const buf = new ArrayBuffer(text.length * 2) // 2 bytes for each char
-    //   const bufView = new Uint16Array(buf)
-    //   for (let i = 0, hi = text.length; i < hi; i++) {
-    //     bufView[i] = text.charCodeAt(i)
-    //   }
-    //   return buf
-    // }
   }
   static fullToHalf = fullToHalf
+  static parseNum = parseNum
 }
 
 const { lapse, result } = strategies({
@@ -79,6 +70,7 @@ const { lapse, result } = strategies({
     edge: FullToNumParser.edge,
     byArrayBuffer: FullToNumParser.byArrayBuffer,
     fullToHalf: FullToNumParser.fullToHalf,
+    parseNum: parseNum
   }
 })
 lapse |> decoCrostab |> says['lapse']
