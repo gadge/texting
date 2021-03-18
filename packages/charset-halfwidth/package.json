@@ -1,6 +1,6 @@
 {
   "name": "@texting/charset-halfwidth",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Regex sets",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -15,7 +15,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@texting/regex-charset": "^0.0.0"
+    "@texting/regex-charset": "^0.0.1"
   },
   "repository": {
     "type": "git",
