@@ -14,6 +14,4 @@ export const parseNum = text => {
   while (i < l && (n = text.charCodeAt(i++)))
     t += String.fromCharCode(0xFF & (n + 0x20))
   return t
-
-
 }

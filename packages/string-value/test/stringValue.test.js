@@ -1,5 +1,5 @@
-import { SP }          from '@texting/enum-chars'
 import { says }        from '@spare/logger'
+import { SP }          from '@texting/enum-chars'
 import { init }        from '@vect/vector-init'
 import { stringValue } from '../src/stringValue'
 

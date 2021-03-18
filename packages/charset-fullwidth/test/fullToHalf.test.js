@@ -1,5 +1,5 @@
 import { logger, xr } from '@spare/logger'
-import { toHalf }     from '../src/core/toHalf'
+import { fullToHalf } from '../dist/index.esm'
 
 const candidates = [
   '（赛博朋克２０７７）',
@@ -13,5 +13,5 @@ const candidates = [
 
 
 for (let full of candidates) {
-  xr()[full](full |> toHalf) |> logger
+  xr()[full](full |> fullToHalf) |> logger
 }

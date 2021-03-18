@@ -1,5 +1,5 @@
-import { DA, SP, VO } from '@texting/enum-chars'
 import { deco }       from '@spare/logger'
+import { DA, SP, VO } from '@texting/enum-chars'
 
 const { logger } = require('@spare/logger')
 

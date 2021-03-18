@@ -1,7 +1,7 @@
-import { hasAnsi } from '@texting/charset-ansi';
-import { lange } from '@texting/lange';
-import { isNumeric } from '@typen/num-strict';
-import { FullWidth, isNumeric as isNumeric$1 } from '@texting/charset-fullwidth';
+import { hasAnsi }                             from '@texting/charset-ansi'
+import { FullWidth, isNumeric as isNumeric$1 } from '@texting/charset-fullwidth'
+import { lange }                               from '@texting/lange'
+import { isNumeric }                           from '@typen/num-strict'
 
 const ansiPadLength = (tx, pd) => hasAnsi(tx) ? tx.length + pd - lange(tx) : pd; // export const lpad = String.prototype.padStart
 // export const rpad = String.prototype.padEnd

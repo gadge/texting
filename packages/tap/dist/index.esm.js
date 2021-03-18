@@ -1,6 +1,6 @@
-import { cosmetics } from '@spare/deco-vector';
-import { SP } from '@texting/enum-chars';
-import { wordsToCamel, wordsToPascal } from '@texting/phrasing';
+import { cosmetics }                   from '@spare/deco-vector'
+import { SP }                          from '@texting/enum-chars'
+import { wordsToCamel, wordsToPascal } from '@texting/phrasing'
 
 const tap = (...words) => {
   const ve = [];

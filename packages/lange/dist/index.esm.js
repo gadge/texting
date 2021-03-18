@@ -1,4 +1,4 @@
-import { ANSI_G, ASTRAL_G } from '@texting/regex-charset';
+import { ANSI_G, ASTRAL_G } from '@texting/regex-charset'
 
 /**
  *

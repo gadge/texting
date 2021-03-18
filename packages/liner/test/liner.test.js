@@ -1,8 +1,8 @@
 import { StringVectorCollection } from '@foba/vector'
 import { delogger }               from '@spare/deco'
+import { logger }                 from '@spare/logger'
 import { BRACKET }                from '@texting/enum-brackets'
 import { COSP }                   from '@texting/enum-chars'
-import { logger }                 from '@spare/logger'
 import { liner }                  from '../src/liner'
 
 

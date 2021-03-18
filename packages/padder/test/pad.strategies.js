@@ -1,6 +1,6 @@
 import { makeEmbedded }              from '@foba/util'
-import { bracket }                   from '@texting/bracket'
 import { decoCrostab, logger, says } from '@spare/logger'
+import { bracket }                   from '@texting/bracket'
 import { strategies }                from '@valjoux/strategies'
 import { dateTime }                  from '@valjoux/timestamp-pretty'
 import { Pad, pad }                  from '../src/Pad'

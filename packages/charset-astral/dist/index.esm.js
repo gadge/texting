@@ -1,4 +1,4 @@
-import { ASTRAL_G, ASTRAL } from '@texting/regex-charset';
+import { ASTRAL, ASTRAL_G } from '@texting/regex-charset'
 
 const clearAstral = tx => tx.replace(ASTRAL_G, '_');
 

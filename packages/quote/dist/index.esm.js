@@ -1,7 +1,7 @@
-import { QT, DT } from '@texting/enum-chars';
-import { APOS, DITTO } from '@texting/enum-quotes';
-import { isString } from '@typen/literal';
-import { nullish } from '@typen/nullish';
+import { DT, QT }      from '@texting/enum-chars'
+import { APOS, DITTO } from '@texting/enum-quotes'
+import { isString }    from '@typen/literal'
+import { nullish }     from '@typen/nullish'
 
 const quote = x => QT + x + QT;
 const ditto = x => DT + x + DT;

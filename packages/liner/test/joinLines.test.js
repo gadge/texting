@@ -1,7 +1,7 @@
 import { StringVectorCollection } from '@foba/vector'
 import { delogger }               from '@spare/deco'
-import { COSP }                   from '@texting/enum-chars'
 import { logger }                 from '@spare/logger'
+import { COSP }                   from '@texting/enum-chars'
 import { joinLines }              from '../src/liner'
 
 

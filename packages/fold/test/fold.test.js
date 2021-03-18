@@ -1,5 +1,5 @@
-import { parenth }               from '@texting/bracket'
 import { DecoString, ros, says } from '@spare/logger'
+import { parenth }               from '@texting/bracket'
 import { Fold }                  from '../src/fold'
 import { candidates }            from './candidates'
 

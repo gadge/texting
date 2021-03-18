@@ -1,5 +1,5 @@
-import { SP as SP_FULL }                         from '@texting/enum-chars-fullwidth'
 import { FullWidth, isNumeric as isNumericFull } from '@texting/charset-fullwidth'
+import { SP as SP_FULL }                         from '@texting/enum-chars-fullwidth'
 import { nullish }                               from '@typen/nullish'
 import { isNumeric }                             from '@typen/num-strict'
 import { ansiPadLength }                         from '../utils/ansiPadLength'

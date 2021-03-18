@@ -1,6 +1,6 @@
-import { br } from '@texting/bracket';
-import { NONE } from '@texting/enum-brackets';
-import { TB, LF, CO } from '@texting/enum-chars';
+import { br }         from '@texting/bracket'
+import { NONE }       from '@texting/enum-brackets'
+import { CO, LF, TB } from '@texting/enum-chars'
 
 /**
  *

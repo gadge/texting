@@ -1,13 +1,15 @@
-import { says }                             from '@palett/says'
-import { decoCrostab, decoSamples, logger } from '@spare/logger'
-import { strategies }                       from '@valjoux/strategies'
-import { init }                             from '@vect/vector-init'
-import { REG_FULL }               from '../../assets/regex'
-import { CharCodeToHalf, toHalf } from '../../src/core/toHalf'
+import { says }        from '@palett/says'
+import { decoCrostab } from '@spare/logger'
+import { strategies }  from '@valjoux/strategies'
+import { init }        from '@vect/vector-init'
+import { REG_FULL }    from '../../assets/regex'
+import { FullToHalf }  from '../../src/FullToHalf'
 
 const NUM_FULL = /[\uff0b-\uff19]/g
 const NUM_FULL_G = /[\uff0b-\uff19]+/g
 const DELTA = 0xFEE0 // 65248
+const fullToHalf = FullToHalf({ cjk: false })
+
 class FullToNumParser {
   static simplistic = text => text
     ?.replace(NUM_FULL, s => String.fromCharCode(s.charCodeAt(0) - DELTA))
@@ -56,8 +58,7 @@ class FullToNumParser {
     //   return buf
     // }
   }
-
-
+  static fullToHalf = fullToHalf
 }
 
 const { lapse, result } = strategies({
@@ -77,7 +78,7 @@ const { lapse, result } = strategies({
     fut: FullToNumParser.fut,
     edge: FullToNumParser.edge,
     byArrayBuffer: FullToNumParser.byArrayBuffer,
-    fullToHalf: toHalf,
+    fullToHalf: FullToNumParser.fullToHalf,
   }
 })
 lapse |> decoCrostab |> says['lapse']
