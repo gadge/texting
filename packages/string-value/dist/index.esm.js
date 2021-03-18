@@ -1,4 +1,4 @@
-import { STR } from '@typen/enum-data-types'
+import { STR } from '@typen/enum-data-types';
 
 const v1 = word => (word.toLowerCase().charCodeAt(0) & 0x7f) << 21;
 

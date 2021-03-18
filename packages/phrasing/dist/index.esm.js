@@ -1,9 +1,8 @@
-import { cosmetics }             from '@spare/deco-vector'
-import { SP }                    from '@texting/enum-chars'
-import { CAPWORD, INILOW, WORD } from '@texting/regex-phrasing'
-import { mutate }                from '@vect/vector-mapper'
-
+import { INILOW, CAPWORD, WORD } from '@texting/regex-phrasing';
 export { CAMEL, CAPREST, CAPWORD, DASH_CAPREST, INILOW, INIWORD, WORD } from '@texting/regex-phrasing';
+import { mutate } from '@vect/vector-mapper';
+import { cosmetics } from '@spare/deco-vector';
+import { SP } from '@texting/enum-chars';
 
 const capitalize = word => word[0].toUpperCase() + word.substring(1).toLowerCase();
 

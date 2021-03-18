@@ -1,4 +1,4 @@
-import { ANSI, ANSI_G } from '@texting/regex-charset'
+import { ANSI_G, ANSI } from '@texting/regex-charset';
 
 const clearAnsi = tx => tx.replace(ANSI_G, '');
 

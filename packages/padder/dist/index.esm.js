@@ -1,7 +1,7 @@
-import { hasAnsi }                             from '@texting/charset-ansi'
-import { FullWidth, isNumeric as isNumeric$1 } from '@texting/charset-fullwidth'
-import { lange }                               from '@texting/lange'
-import { isNumeric }                           from '@typen/num-strict'
+import { hasAnsi } from '@texting/charset-ansi';
+import { lange } from '@texting/lange';
+import { isNumeric } from '@typen/num-strict';
+import { FullWidth, isNumeric as isNumeric$1 } from '@texting/charset-fullwidth';
 
 const ansiPadLength = (tx, pd) => hasAnsi(tx) ? tx.length + pd - lange(tx) : pd; // export const lpad = String.prototype.padStart
 // export const rpad = String.prototype.padEnd
@@ -20,11 +20,9 @@ const RPad = ({
 
 const SP$1 = ' ';
 
-const DIGIT_INITIAL = /^\d/;
 const COMMA = /,/g;
-const removeThousandSeparator = tx => {
+const clean = tx => {
   if (!tx || tx.length <= 4) return tx;
-  if (!DIGIT_INITIAL.test(tx)) return tx;
   return tx.replace(COMMA, '');
 };
 
@@ -34,7 +32,7 @@ const pad = function (tx, wd, va) {
     fill = SP$1,
     thousand = true
   } = this !== null && this !== void 0 ? this : {};
-  const padder = isNumeric(va !== null && va !== void 0 ? va : thousand ? removeThousandSeparator(tx) : tx) ? lpad : rpad;
+  const padder = isNumeric(va !== null && va !== void 0 ? va : thousand ? clean(tx) : tx) ? lpad : rpad;
   return ansi ? padder(tx, ansiPadLength(tx, wd), fill) : padder(tx, wd, fill);
 };
 /**

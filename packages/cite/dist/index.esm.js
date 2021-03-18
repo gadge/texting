@@ -1,5 +1,5 @@
-import { tenseQuote }      from '@texting/quote'
-import { makeReplaceable } from '@texting/translator'
+import { tenseQuote } from '@texting/quote';
+import { makeReplaceable } from '@texting/translator';
 
 var _ref;
 const REG_CR = /\r/g;

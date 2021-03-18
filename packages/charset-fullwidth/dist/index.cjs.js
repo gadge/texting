@@ -34,6 +34,23 @@ const REG_NUM_FULL = new RegExp(`^\s*[－＋]?(?:，*[${FULL_NUM}]+)*．?[${FULL
 
 const isNumeric = tx => REG_NUM_FULL.test(tx);
 
+const NON_SPACE = /[^\s]/;
+const parseNum = text => {
+  if (!text) return NaN;
+  let l = text.length,
+      i = text.search(NON_SPACE),
+      t = '',
+      n,
+      v;
+
+  while (i < l && (n = text.charCodeAt(i++))) if (n !== 0xff0c) {
+    v = 0xFF & n + 0x20;
+    t += String.fromCharCode(v < n ? v : n);
+  }
+
+  return +t;
+};
+
 function _defineProperty(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
@@ -152,3 +169,4 @@ exports.FullToHalf = FullToHalf;
 exports.fullToHalf = fullToHalf;
 exports.hasFull = hasFull;
 exports.isNumeric = isNumeric;
+exports.parseNum = parseNum;

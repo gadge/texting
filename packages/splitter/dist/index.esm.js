@@ -1,4 +1,4 @@
-import { CAPWORD, INILOW, LITERAL } from '@texting/regex-phrasing'
+import { LITERAL, INILOW, CAPWORD } from '@texting/regex-phrasing';
 
 const splitter = function (text) {
   const regex = this;

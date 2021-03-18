@@ -1,4 +1,4 @@
-import { ANBR, BRC, BRK, PAR } from '@texting/enum-brackets'
+import { PAR, BRK, BRC, ANBR } from '@texting/enum-brackets';
 
 const parenth = x => '(' + x + ')';
 const bracket = x => '[' + x + ']';

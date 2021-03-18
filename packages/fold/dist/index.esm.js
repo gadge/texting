@@ -1,4 +1,4 @@
-import { LF, SP } from '@texting/enum-chars'
+import { SP, LF } from '@texting/enum-chars';
 
 const SPACE = /\s+/g;
 const LINEFEED = /\r?\n/;
