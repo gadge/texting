@@ -1,3 +1,4 @@
+import { parseNum as parseNum$1 } from '@typen/num-strict';
 import { SP, CO, DOT } from '@texting/enum-chars';
 
 const CJK_PUNCS = '\u3000-\u303f';
@@ -44,7 +45,7 @@ const parseNum = text => {
     t += String.fromCharCode(v < n ? v : n);
   }
 
-  return +t;
+  return parseNum$1(t);
 };
 
 function _defineProperty(obj, key, value) {

@@ -2,6 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
+var numStrict = require('@typen/num-strict');
 var enumChars = require('@texting/enum-chars');
 
 const CJK_PUNCS = '\u3000-\u303f';
@@ -48,7 +49,7 @@ const parseNum = text => {
     t += String.fromCharCode(v < n ? v : n);
   }
 
-  return +t;
+  return numStrict.parseNum(t);
 };
 
 function _defineProperty(obj, key, value) {
