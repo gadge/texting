@@ -1,6 +1,6 @@
 {
   "name": "@texting/tap",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Join strings together",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -16,8 +16,8 @@
   },
   "dependencies": {
     "@spare/deco-vector": "^0.10.14",
-    "@texting/enum-chars": "^0.0.4",
-    "@texting/phrasing": "^0.0.4",
+    "@texting/enum-chars": "^0.0.5",
+    "@texting/phrasing": "^0.0.5",
     "@typen/nullish": "^0.1.15"
   },
   "repository": {
