@@ -1,3 +1,5 @@
+import { parseNum as parseNumStrict } from '@typen/num-strict'
+
 const NON_SPACE = /[^\s]/
 export const parseNum = text => {
   if (!text) return NaN
@@ -7,5 +9,5 @@ export const parseNum = text => {
       v = 0xFF & (n + 0x20)
       t += String.fromCharCode(v < n ? v : n)
     }
-  return +t
+  return parseNumStrict(t)
 }

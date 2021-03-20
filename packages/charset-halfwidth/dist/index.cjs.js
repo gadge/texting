@@ -56,5 +56,25 @@ const HalfToFull = ({
   lean
 });
 
+const COMMA = /,/g;
+
+const isNumeric = x => {
+  var _x;
+
+  x = (_x = x) === null || _x === void 0 ? void 0 : _x.replace(COMMA, '');
+  return !isNaN(x - parseFloat(x));
+};
+
+const validate = (x, y) => isNaN(x - y) ? NaN : y;
+
+const parseNum = x => {
+  var _x;
+
+  x = (_x = x) === null || _x === void 0 ? void 0 : _x.replace(COMMA, '');
+  return validate(x, parseFloat(x));
+};
+
 exports.HalfToFull = HalfToFull;
 exports.halfToFull = halfToFull;
+exports.isNumeric = isNumeric;
+exports.parseNum = parseNum;
