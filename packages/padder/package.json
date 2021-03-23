@@ -20,7 +20,7 @@
     "@texting/charset-halfwidth": "^0.0.5",
     "@texting/enum-chars-fullwidth": "^0.0.5",
     "@texting/lange": "^0.0.5",
-    "@typen/num-strict": "^0.1.15"
+    "@typen/num-strict": "^0.1.16"
   },
   "repository": {
     "type": "git",

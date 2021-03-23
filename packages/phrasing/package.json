@@ -15,10 +15,10 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@spare/deco-vector": "^0.10.14",
+    "@spare/deco-vector": "^0.11.5",
     "@texting/enum-chars": "^0.0.5",
     "@texting/regex-phrasing": "^0.0.5",
-    "@vect/vector-mapper": "^0.3.6"
+    "@vect/vector-mapper": "^0.3.7"
   },
   "repository": {
     "type": "git",
