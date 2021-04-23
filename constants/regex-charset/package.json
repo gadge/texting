@@ -1,6 +1,6 @@
 {
   "name": "@texting/regex-charset",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Regex sets",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
