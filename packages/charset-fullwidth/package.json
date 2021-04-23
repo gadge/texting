@@ -1,6 +1,6 @@
 {
   "name": "@texting/charset-fullwidth",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Convert between half-width and full-width",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -15,10 +15,10 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@texting/charset-ansi": "^0.0.6",
-    "@texting/enum-chars": "^0.0.6",
-    "@texting/enum-chars-fullwidth": "^0.0.6",
-    "@texting/lange": "^0.0.6",
+    "@texting/charset-ansi": "^0.0.7",
+    "@texting/enum-chars": "^0.0.7",
+    "@texting/enum-chars-fullwidth": "^0.0.7",
+    "@texting/lange": "^0.0.7",
     "@typen/num-strict": "^0.1.16"
   },
   "repository": {

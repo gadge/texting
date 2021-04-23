@@ -1,6 +1,6 @@
 {
   "name": "@texting/cite",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Process string for file write",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -15,8 +15,8 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@texting/quote": "^0.0.6",
-    "@texting/translator": "^0.0.6"
+    "@texting/quote": "^0.0.7",
+    "@texting/translator": "^0.0.7"
   },
   "repository": {
     "type": "git",
