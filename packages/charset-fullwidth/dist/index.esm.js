@@ -48,21 +48,6 @@ const parseNum = text => {
   return parseNum$1(t);
 };
 
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
 /**
  * Full-angle string -> Half-angle string
  * 全角转换为半角
@@ -94,7 +79,7 @@ function _fullToHalfCore(text) {
 }
 class Conv {}
 
-_defineProperty(Conv, "cjkAndFullChars", text => {
+Conv.cjkAndFullChars = text => {
   let tx = '',
       i = 0,
       l = text.length,
@@ -103,9 +88,9 @@ _defineProperty(Conv, "cjkAndFullChars", text => {
   while (i < l && (n = text.charCodeAt(i++))) tx += n < 0xff00 ? CharConv.cjkPunc(n) : CharConv.fullChars(n);
 
   return tx;
-});
+};
 
-_defineProperty(Conv, "fullChars", text => {
+Conv.fullChars = text => {
   let tx = '',
       i = 0,
       l = text.length,
@@ -114,7 +99,7 @@ _defineProperty(Conv, "fullChars", text => {
   while (i < l && (n = text.charCodeAt(i++))) tx += CharConv.fullChars(n);
 
   return tx;
-});
+};
 
 class CharConv {
   static cjkPunc(charCode) {

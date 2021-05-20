@@ -15,7 +15,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@spare/deco-vector": "^0.11.14",
+    "@spare/deco-vector": "^0.11.15",
     "@texting/enum-chars": "^0.0.9",
     "@texting/phrasing": "^0.0.9",
     "@typen/nullish": "^0.1.16"
