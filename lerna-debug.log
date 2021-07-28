@@ -1,5 +1,0 @@
-124 error Error: Command failed with exit code 128: git push --follow-tags --no-verify --atomic origin master
-124 error remote: No anonymous write access.
-124 error fatal: Authentication failed for 'https://github.com/gadge/texting.git/'
-124 error     at makeError (/home/hazen/banyan/texting/node_modules/execa/lib/error.js:59:11)
-124 error     at handlePromise (/home/hazen/banyan/texting/node_modules/execa/index.js:114:26)

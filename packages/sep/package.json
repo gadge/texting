@@ -1,7 +1,7 @@
 {
-  "name": "@texting/translator",
+  "name": "@texting/sep",
   "version": "0.0.13",
-  "description": "Translator, bulk replace string at a time",
+  "description": "Separate string into two",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "files": [
@@ -10,16 +10,22 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "pub": "npm publish",
+    "test": "node -r @babel/register test/test.index.js"
+  },
+  "dependencies": {
+    "@texting/regex-phrasing": "^0.0.13"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gadge/spare.git"
   },
   "keywords": [
-    "replace",
-    "Symbol.replace",
-    "translate",
-    "translator",
-    "translation"
+    "test",
+    "console",
+    "debug",
+    "print"
   ],
   "author": "Hoyeung Wong",
   "license": "MIT",
