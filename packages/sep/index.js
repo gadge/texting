@@ -1,6 +1,2 @@
-export { splitter }     from './src/splitter'
-export { splitLiteral } from './src/splitLiteral'
-export { splitCamel }   from './src/splitCamel'
-export { splitSnake }   from './src/splitSnake'
-
-export { sepByLastIndex } from './src/sepByLastIndex'
+export { sepByLast } from './src/sepByLast'
+export { sep }       from './src/sep'

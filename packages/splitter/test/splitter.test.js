@@ -1,7 +1,7 @@
 import { deco }     from '@spare/deco'
 import { says }     from '@spare/logger'
 import { LITERAL }  from '@texting/regex-phrasing'
-import { splitter } from '../dist/index.cjs'
+import { splitter } from '../src/splitter'
 
 export const candidates = {
   simple: 'foo',
@@ -17,6 +17,6 @@ export const candidates = {
 }
 
 
-for (let [key, word] of Object.entries(candidates)) {
+for (let [ key, word ] of Object.entries(candidates)) {
   splitter.call(LITERAL, word) |> deco |> says[key]
 }

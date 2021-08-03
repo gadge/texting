@@ -1,4 +1,4 @@
-export const sepByLastIndex = function (text) {
+export const sepByLast = function (text) {
   const regex = this
   let ms, l = 0, r = 0
   while (( ms = regex.exec(text) )) {
