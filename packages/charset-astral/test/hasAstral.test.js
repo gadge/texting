@@ -1,7 +1,5 @@
 import { logger, Xr }  from '@spare/logger'
-import { clearAnsi }   from '../src/clearAnsi'
 import { clearAstral } from '../src/clearAstral'
-import { hasAnsi }     from '../src/hasAnsi'
 import { hasAstral }   from '../src/hasAstral'
 
 const candidates = [
@@ -19,5 +17,5 @@ const candidates = [
 
 
 for (let w of candidates) {
-  Xr(w).hasAnsi(hasAnsi(w)).hasAstral(hasAstral(w)).clearAnsi(clearAnsi(w)).clearAstral(clearAstral(w)) |> logger
+  Xr(w)['hasAstral'](hasAstral(w))['clearAstral'](clearAstral(w)) |> logger
 }

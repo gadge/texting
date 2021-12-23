@@ -1,8 +1,6 @@
-import { logger, Xr }  from '@spare/logger'
-import { clearAnsi }   from '../src/clearAnsi'
-import { clearAstral } from '../src/clearAstral'
-import { hasAnsi }     from '../src/hasAnsi'
-import { hasAstral }   from '../src/hasAstral'
+import { logger, Xr } from '@spare/logger'
+import { clearAnsi }  from '../src/clearAnsi'
+import { hasAnsi }    from '../src/hasAnsi'
 
 const candidates = [
   'tora',
@@ -17,7 +15,8 @@ const candidates = [
   '\u001B[0m\u001B[4m\u001B[42m\u001B[31mfoo\u001B[39m\u001B[49m\u001B[24mfoo\u001B[0m🦄bar'
 ]
 
+Xr("ANSI")["source"](ANSI.source.toString()) |> logger
 
 for (let w of candidates) {
-  Xr(w).hasAnsi(hasAnsi(w)).hasAstral(hasAstral(w)).clearAnsi(clearAnsi(w)).clearAstral(clearAstral(w)) |> logger
+  Xr(w).hasAnsi(hasAnsi(w)).clearAnsi(clearAnsi(w)) |> logger
 }
