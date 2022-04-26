@@ -1,6 +1,6 @@
 {
   "name": "@texting/string-value",
-  "version": "0.0.13",
+  "version": "0.1.0",
   "description": "Get quasi pseudo value of a string",
   "main": "./dist/index.cjs",
   "exports": {

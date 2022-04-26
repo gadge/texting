@@ -1,6 +1,6 @@
 {
   "name": "@texting/liner",
-  "version": "0.0.13",
+  "version": "0.1.0",
   "description": "Join lines together",
   "main": "./dist/index.cjs",
   "exports": {
@@ -18,9 +18,9 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@texting/bracket": "^0.0.13",
-    "@texting/enum-brackets": "^0.0.13",
-    "@texting/enum-chars": "^0.0.13"
+    "@texting/bracket": "^0.1.0",
+    "@texting/enum-brackets": "^0.1.0",
+    "@texting/enum-chars": "^0.1.0"
   },
   "repository": {
     "type": "git",
