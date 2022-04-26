@@ -2,8 +2,11 @@
   "name": "@texting/charset-fullwidth",
   "version": "0.0.13",
   "description": "Convert between half-width and full-width",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "./dist/index.cjs",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  },
   "files": [
     "dist"
   ],

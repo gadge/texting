@@ -2,8 +2,11 @@
   "name": "@texting/phrasing",
   "version": "0.0.13",
   "description": "Convert among snake/kebab/camel/pascal phrasings",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "./dist/index.cjs",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  },
   "files": [
     "dist"
   ],

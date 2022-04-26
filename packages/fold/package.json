@@ -2,8 +2,11 @@
   "name": "@texting/fold",
   "version": "0.0.13",
   "description": "Split one line of words into lines",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "./dist/index.cjs",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  },
   "files": [
     "dist"
   ],
