@@ -1,6 +1,6 @@
 {
   "name": "@texting/phrasing",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Convert among snake/kebab/camel/pascal phrasings",
   "main": "./dist/index.cjs",
   "exports": {
@@ -19,8 +19,8 @@
   },
   "dependencies": {
     "@spare/deco-vector": "^0.13.7",
-    "@texting/enum-chars": "^0.1.1",
-    "@texting/regex-phrasing": "^0.1.1",
+    "@texting/enum-chars": "^0.1.2",
+    "@texting/regex-phrasing": "^0.1.2",
     "@vect/vector-mapper": "^0.5.22"
   },
   "repository": {

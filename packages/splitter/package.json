@@ -1,6 +1,6 @@
 {
   "name": "@texting/splitter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Join lines together",
   "main": "./dist/index.cjs",
   "exports": {
@@ -18,7 +18,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@texting/regex-phrasing": "^0.1.1"
+    "@texting/regex-phrasing": "^0.1.2"
   },
   "repository": {
     "type": "git",
