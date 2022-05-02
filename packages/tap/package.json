@@ -18,10 +18,10 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@spare/deco-vector": "^0.11.20",
+    "@spare/deco-vector": "^0.13.7",
     "@texting/enum-chars": "^0.1.1",
     "@texting/phrasing": "^0.1.1",
-    "@typen/nullish": "^0.1.16"
+    "@typen/nullish": "^0.1.19"
   },
   "repository": {
     "type": "git",

@@ -1,9 +1,9 @@
-import { SP }                      from '@texting/enum-chars'
-import { isNumeric }               from '@typen/num-strict'
-import { ansiPadLength }           from '../utils/ansiPadLength'
-import { lpad }  from '../utils/LPad'
-import { clean } from '../utils/clean'
-import { rpad }  from '../utils/RPad'
+import { SP }            from '@texting/enum-chars'
+import { isNumeric }     from '@typen/num-strict'
+import { ansiPadLength } from '../utils/ansiPadLength'
+import { lpad }          from '../utils/LPad'
+import { clean }         from '../utils/clean'
+import { rpad }          from '../utils/RPad'
 
 
 export const pad = function (tx, wd, va) {

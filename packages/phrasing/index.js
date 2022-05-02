@@ -8,7 +8,7 @@ export {
   CAPREST
 }                                                    from '@texting/regex-phrasing'
 export { camelToSnake, snakeToCamel, snakeToPascal } from './src/phrasing'
-export { capitalize }                                from './src/capitalize'
+export { capitalize, toUpper, toLower }              from './src/case'
 export { wordToCap }                                 from './src/wordToCap'
 export { wordsToCamel, wordsToPascal }               from './src/words'
 export { camelToVector, snakeToVector }              from './src/vectorize'

@@ -1,7 +1,6 @@
-import { logger } from '@spare/logger'
-import { lange }  from '@texting/lange'
-import { xr }     from '@texting/xr'
-import { RPad }   from '../utils/RPad'
+import { logger, xr } from '@spare/logger'
+import { lange }      from '@texting/lange'
+import { RPad }       from '../utils/RPad'
 
 const brc = x => `(${x})`
 String.prototype.padStart.call('abc', 5) |> brc|> logger
