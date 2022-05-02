@@ -1,5 +1,5 @@
 import { CAPWORD, INILOW, WORD } from '@texting/regex-phrasing'
-import { capitalize }            from './capitalize'
+import { capitalize }            from './case'
 
 /**
  * Camel/pascal case phrase -> Lowercase dashed phrase, snake or kebab.
