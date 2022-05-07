@@ -1,4 +1,4 @@
-import { deco }           from '@spare/deco'
+import { deco }       from '@spare/deco'
 import { logger }     from '@spare/logger'
 import { sepByLast }  from '../src/sepByLast'
 import { candidates } from './candidates'
