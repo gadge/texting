@@ -1,6 +1,6 @@
 {
   "name": "@texting/translator",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Translator, bulk replace string at a time",
   "main": "./dist/index.cjs",
   "exports": {
