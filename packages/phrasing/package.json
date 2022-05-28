@@ -18,10 +18,9 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@spare/deco-vector": "^0.13.7",
     "@texting/enum-chars": "^0.1.3",
     "@texting/regex-phrasing": "^0.1.3",
-    "@vect/vector-mapper": "^0.5.22"
+    "@vect/vector-mapper": "^0.7.11"
   },
   "repository": {
     "type": "git",
