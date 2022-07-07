@@ -1,6 +1,6 @@
 {
   "name": "@texting/quote",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Add quotation mark to string",
   "main": "./dist/index.cjs",
   "exports": {
@@ -18,8 +18,8 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@texting/enum-chars": "^0.1.6",
-    "@texting/enum-quotes": "^0.1.6",
+    "@texting/enum-chars": "^0.1.7",
+    "@texting/enum-quotes": "^0.1.7",
     "@typen/literal": "^0.1.19",
     "@typen/nullish": "^0.1.19"
   },
