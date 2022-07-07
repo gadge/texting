@@ -20,6 +20,11 @@
   "dependencies": {
     "@typen/enum-data-types": "^0.1.19"
   },
+  "devDependencies": {
+    "@aryth/math": "^0.6.1",
+    "@vect/object-init": "^0.7.14",
+    "@vect/vector-zipper": "^0.7.14"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gadge/spare.git"

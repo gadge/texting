@@ -21,12 +21,7 @@ export const foldToVector = function (text) {
   return lines
 }
 
-export const fold = function (text) {
-  const context = this
-  const delim = this?.delim ?? LF
-  const lines = text |> foldToVector.bind(context)
-  return lines.join(delim)
-}
+export function fold(text) { return foldToVector.call(this, text).join(this?.delim ?? LF) }
 
 export const FoldToVector = ({ width, regex, firstLineIndent }) => {
   return foldToVector.bind({ width, regex, firstLineIndent })
