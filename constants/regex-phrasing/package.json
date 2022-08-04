@@ -1,6 +1,6 @@
 {
   "name": "@texting/regex-phrasing",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Regex sets",
   "main": "./dist/index.cjs",
   "exports": {
