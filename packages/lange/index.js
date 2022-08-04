@@ -1,1 +1,1 @@
-export { Lange, lange } from './src/lange'
+export { Lange, lange, length } from './src/lange'

@@ -10,6 +10,8 @@ export const lange = tx => tx
   .replace(ASTRAL_G, '_')
   .length
 
-export const Lange = ansi => ansi ? lange : x => x.length
+export const length = x => x.length
+
+export const Lange = ansi => ansi ? lange : length
 
 
