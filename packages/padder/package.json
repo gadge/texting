@@ -1,6 +1,6 @@
 {
   "name": "@texting/padder",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "A debugging tool",
   "main": "./dist/index.cjs",
   "exports": {
@@ -18,11 +18,11 @@
     "test": "node -r @babel/register test/pad-string.test.js"
   },
   "dependencies": {
-    "@texting/charset-ansi": "^0.1.8",
-    "@texting/charset-fullwidth": "^0.1.8",
-    "@texting/charset-halfwidth": "^0.1.8",
-    "@texting/enum-chars-fullwidth": "^0.1.8",
-    "@texting/lange": "^0.1.8",
+    "@texting/charset-ansi": "^0.1.9",
+    "@texting/charset-fullwidth": "^0.1.9",
+    "@texting/charset-halfwidth": "^0.1.9",
+    "@texting/enum-chars-fullwidth": "^0.1.9",
+    "@texting/lange": "^0.1.9",
     "@typen/num-strict": "^0.1.19"
   },
   "repository": {
