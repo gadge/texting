@@ -21,13 +21,12 @@ const LINEFEED = /\n/
 const COMMA = /,/
 
 const linesHandler = function (lines) {
-  const { discrete = false, delim = LF, bracket = NONE, level = 0 } = this
-  if (discrete) return lines
-  const hover = !!bracket
-  const joined = lines.length && LINEFEED.test(delim)
-    ? joinLines(lines, COMMA.test(delim) ? CO : '', level, hover)
+  if (this?.discrete) return lines
+  const { delim = LF, bracket = NONE, level = 0 } = this
+  const text = lines.length && LINEFEED.test(delim)
+    ? joinLines(lines, COMMA.test(delim) ? CO : '', level, !!bracket)
     : lines.join(delim)
-  return br(joined, bracket)
+  return br(text, bracket)
 }
 
 /**

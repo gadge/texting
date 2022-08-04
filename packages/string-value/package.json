@@ -21,9 +21,9 @@
     "@typen/enum-data-types": "^0.1.19"
   },
   "devDependencies": {
-    "@aryth/math": "^0.6.1",
-    "@vect/object-init": "^0.7.14",
-    "@vect/vector-zipper": "^0.7.14"
+    "@aryth/math": "^0.6.7",
+    "@vect/object-init": "^0.7.15",
+    "@vect/vector-zipper": "^0.7.15"
   },
   "repository": {
     "type": "git",

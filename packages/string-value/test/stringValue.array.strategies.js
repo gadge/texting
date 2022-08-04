@@ -4,18 +4,17 @@ import { says }                     from '@spare/xr'
 import { makeEmbedded }             from '@foba/util'
 import { strategies }               from '@valjoux/strategies'
 import { stringValue }              from '../src/alpha'
-import { mapper } from '@vect/vector-mapper'
-import { value }  from '../src/value'
-import { values } from '../src/gamma'
+import { mapper }                   from '@vect/vector-mapper'
+import { value }                    from '../src/value'
 
 const { lapse, result } = strategies({
   repeat: 3E+5,
   candidates: {
     As: init(8, i => 'A'.repeat(i + 1)),
-    upTo4: ['A', 'AB', 'ABC', 'ABCD'],
-    upTo5: ['0', '01', '012', '0123', '01234'],
-    dates: ['2022-01-31', '2022-02-28', '2022-03-31', '2022-06-30', '2022-09-30', '2022-12-31'],
-    words: ['Alexander', 'Caesar', 'Putin', 'Hannibal', 'Farnese', 'Charles', 'Frederick', 'Napoleon']
+    upTo4: [ 'A', 'AB', 'ABC', 'ABCD' ],
+    upTo5: [ '0', '01', '012', '0123', '01234' ],
+    dates: [ '2022-01-31', '2022-02-28', '2022-03-31', '2022-06-30', '2022-09-30', '2022-12-31' ],
+    words: [ 'Alexander', 'Caesar', 'Putin', 'Hannibal', 'Farnese', 'Charles', 'Frederick', 'Napoleon' ]
   } |> makeEmbedded,
   methods: {
     bench: x => x,
@@ -44,7 +43,8 @@ const { lapse, result } = strategies({
         let v = 0, p = 30
         for (let i = 0, cx, cy; i < hi; i++) {
           cx = tx.charCodeAt(i), cy = ty.charCodeAt(i)
-          if (cx > cy) {v += (cx << p)} else if (cx < cy) {v -= (cx << p)}
+          if (cx > cy) {v += (cx << p)}
+          else if (cx < cy) {v -= (cx << p)}
           p--
         }
         return v
@@ -60,6 +60,6 @@ const { lapse, result } = strategies({
 lapse |> decoCrostab |> says['lapse']
 result |> decoCrostab |> says['result']
 const result2 = result.slice()
-result2.headward.select(['fut'])
+result2.headward.select([ 'fut' ])
 result2 |> DecoCrostab({ read: xs => xs.map(x => x.toString(16).toUpperCase()) }) |> console.log
 

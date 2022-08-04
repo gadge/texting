@@ -1,9 +1,10 @@
-import { ansiPadLength } from './ansiPadLength'
+import { fix } from './ansiPadLength'
 
 
 export const lpad = Function.prototype.call.bind(String.prototype.padStart)
 
-export const LPad = ({ ansi = true, fill } = {}) =>
-  ansi
-    ? (tx, pd) => lpad(tx, ansiPadLength(tx, pd), fill)
+export const LPad = ({ ansi = true, fill } = {}) => {
+  return ansi
+    ? (tx, pd) => lpad(tx, fix(tx, pd), fill)
     : (tx, pd) => lpad(tx, pd, fill)
+}
