@@ -1,6 +1,6 @@
 import { ansiPadLength } from '../utils/ansiPadLength'
-import { lpad }          from '../utils/LPad'
-import { rpad }          from '../utils/RPad'
+import { lpad }          from './LPad.js'
+import { rpad }          from './RPad.js'
 import { pad }           from './Pad'
 
 export const padDock = function (tx, wd) {

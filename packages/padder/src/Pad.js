@@ -1,9 +1,9 @@
 import { SP }        from '@texting/enum-chars'
 import { isNumeric } from '@typen/num-strict'
-import { fix }       from '../utils/ansiPadLength.js'
-import { lpad }      from '../utils/LPad'
-import { clean }     from '../utils/clean'
-import { rpad }      from '../utils/RPad'
+import { fix }   from '../utils/ansiPadLength.js'
+import { lpad }  from './LPad.js'
+import { clean } from '../utils/clean'
+import { rpad }  from './RPad.js'
 
 export const pad = function (tx, wd, va) {
   const { ansi = true, fill = SP, thousand = true } = this ?? {}
