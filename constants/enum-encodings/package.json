@@ -1,6 +1,6 @@
 {
   "name": "@texting/enum-encodings",
-  "version": "0.1.9",
+  "version": "0.1.12",
   "description": "String encodings",
   "main": "./dist/index.cjs",
   "exports": {

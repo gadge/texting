@@ -1,6 +1,6 @@
 {
   "name": "@texting/lange",
-  "version": "0.1.9",
+  "version": "0.1.12",
   "description": "Get string length s.t. correcting astral codes and skipping ansi codes",
   "main": "./dist/index.cjs",
   "exports": {
@@ -18,7 +18,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@texting/regex-charset": "^0.1.9"
+    "@texting/regex-charset": "^0.1.12"
   },
   "repository": {
     "type": "git",

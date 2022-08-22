@@ -1,6 +1,6 @@
 {
   "name": "@texting/enum-brackets",
-  "version": "0.1.9",
+  "version": "0.1.12",
   "description": "String brackets",
   "main": "./dist/index.cjs",
   "exports": {
