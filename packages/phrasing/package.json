@@ -20,7 +20,7 @@
   "dependencies": {
     "@texting/enum-chars": "^0.1.9",
     "@texting/regex-phrasing": "^0.1.9",
-    "@vect/vector-mapper": "^0.7.15"
+    "@vect/vector-mapper": "^0.7.16"
   },
   "repository": {
     "type": "git",

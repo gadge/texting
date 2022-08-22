@@ -6,6 +6,7 @@ import { strategies }               from '@valjoux/strategies'
 import { stringValue }              from '../src/alpha'
 import { mapper }                   from '@vect/vector-mapper'
 import { value }                    from '../src/value'
+import { values }                   from '../src/values.js'
 
 const { lapse, result } = strategies({
   repeat: 3E+5,
