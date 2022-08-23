@@ -1,6 +1,6 @@
 {
   "name": "@texting/enum-chars-fullwidth",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Full-angle chars",
   "main": "./dist/index.cjs",
   "exports": {

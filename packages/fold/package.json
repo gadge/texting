@@ -1,6 +1,6 @@
 {
   "name": "@texting/fold",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Split one line of words into lines",
   "main": "./dist/index.cjs",
   "exports": {
@@ -18,7 +18,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@texting/enum-chars": "^0.1.12"
+    "@texting/enum-chars": "^0.1.13"
   },
   "repository": {
     "type": "git",
