@@ -1,6 +1,6 @@
 {
   "name": "@texting/sep",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Separate string into two",
   "type": "module",
   "exports": "./dist/index.js",

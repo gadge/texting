@@ -1,5 +1,13 @@
 # @texting/charset-ansi
 
+## 0.2.1
+
+### Patch Changes
+
+- 5078959: minor fix
+- Updated dependencies [5078959]
+  - @texting/regex-charset@0.2.1
+
 ## 0.2.0
 
 ### Minor Changes
