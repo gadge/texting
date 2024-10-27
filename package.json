@@ -17,6 +17,7 @@
   "devDependencies": {
     "@acq/path": "^0.3.32",
     "@analys/crostab": "^0.7.0",
+    "@changesets/cli": "^2.27.9",
     "@foba/util": "^0.6.1",
     "@foba/vector-string": "^0.6.1",
     "@palett/says": "^0.9.10",
