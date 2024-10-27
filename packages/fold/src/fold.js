@@ -1,10 +1,10 @@
-import { LF, SP } from '@texting/enum-chars'
+import { LF } from '@texting/enum-chars'
 
 export const RSP = /\s+/g
 export const RLF = /\r?\n/
 const FAKE = {}
 
-export const foldToVector = function (text) {
+export function foldToVector(text) {
   const ctx = this ?? FAKE
   const wd = ctx.wd ?? ctx.width ?? 80
   const reg = ctx.reg ?? ctx.regex ?? RSP

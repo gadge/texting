@@ -35,8 +35,8 @@ const special = [
 
 for (let [full, half] of special) {
   const codes = {
-    full: full |> toCode,
-    half: half |> toCode,
+    full: toCode(full),
+    half: toCode(half),
   }
   Xr()
     [codes.full + ':' + (codes.full|> codeToHex)](full)
