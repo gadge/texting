@@ -2,11 +2,8 @@
   "name": "@texting/string-value",
   "version": "0.1.13",
   "description": "Get quasi pseudo value of a string",
-  "main": "./dist/index.cjs",
-  "exports": {
-    "import": "./dist/index.mjs",
-    "require": "./dist/index.cjs"
-  },
+  "type": "module",
+  "exports": "./dist/index.js",
   "files": [
     "dist"
   ],
@@ -21,9 +18,9 @@
     "@typen/enum-data-types": "^0.1.19"
   },
   "devDependencies": {
-    "@aryth/math": "^0.6.8",
-    "@vect/object-init": "^0.7.16",
-    "@vect/vector-zipper": "^0.7.16"
+    "@aryth/math": "^0.7.0",
+    "@vect/object-init": "^0.8.0",
+    "@vect/vector-zipper": "^0.8.0"
   },
   "repository": {
     "type": "git",

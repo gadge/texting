@@ -2,11 +2,8 @@
   "name": "@texting/enum-chars",
   "version": "0.1.13",
   "description": "Chars",
-  "main": "./dist/index.cjs",
-  "exports": {
-    "import": "./dist/index.mjs",
-    "require": "./dist/index.cjs"
-  },
+  "type": "module",
+  "exports": "./dist/index.js",
   "files": [
     "dist"
   ],
@@ -18,7 +15,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "repository": {
-    "type": "git",
+  "type": "git",
     "url": "git+https://github.com/gadge/spare.git"
   },
   "keywords": [
