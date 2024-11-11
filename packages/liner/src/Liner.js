@@ -30,6 +30,4 @@ export class Liner {
   static entries(ent, de, lv, br) {
 
   }
-
-
 }

@@ -47,6 +47,7 @@ export function head(x, lo, hi) {
   while (lo < hi) n += val(x, lo++) << (i -= 4)
   return n
 }
+
 export function tail(x, lo, hi) {
   if (hi > x.length) hi = x.length
   if (hi <= lo) return 0
