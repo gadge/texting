@@ -1,6 +1,6 @@
 <div style="text-align:center">
 	<img alt="banner" src="./media/texting-banner.svg"/>
-  <p style="text-align:center">functionalities for vector</p>
+  <p style="text-align:center">featured functions on string</p>
 </div>
 
 [![version](https://img.shields.io/npm/v/@texting/lange?logo=npm&style=flat-square)]()
