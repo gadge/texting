@@ -20,6 +20,9 @@
   "dependencies": {
     "@texting/regex-phrasing": "workspace:^"
   },
+  "devDependencies": {
+    "@aryth/comparer": "^0.7.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gadge/spare.git"

@@ -10,7 +10,7 @@ const presetAdjoin = p => {
 
 export const adjoin = function (...words) {
   const
-    ve     = tap.apply(null, words),
+    ve = tap.apply(null, words),
     config = presetAdjoin(this)
   return decoVector(ve, config)
 }

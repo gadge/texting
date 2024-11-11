@@ -23,7 +23,7 @@
     "@texting/enum-chars-fullwidth": "workspace:^",
     "@texting/lange": "workspace:^",
     "@texting/regex-charset": "^0.2.1",
-    "@typen/num-strict": "^0.1.19"
+    "@typen/num-strict": "^0.2.0"
   },
   "repository": {
     "type": "git",

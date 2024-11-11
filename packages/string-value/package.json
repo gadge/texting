@@ -18,11 +18,11 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@typen/enum-data-types": "^0.1.19",
-    "@texting/enum-chars": "workspace:^"
+    "@texting/enum-chars": "workspace:^",
+    "@typen/enum-data-types": "^0.2.0"
   },
   "devDependencies": {
-    "@aryth/math": "^0.7.0",
+    "@aryth/math": "^0.7.3",
     "@vect/object-init": "^0.8.0",
     "@vect/vector-zipper": "^0.8.0"
   },

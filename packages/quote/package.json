@@ -20,8 +20,8 @@
   "dependencies": {
     "@texting/enum-chars": "workspace:^",
     "@texting/enum-quotes": "workspace:^",
-    "@typen/literal": "^0.1.19",
-    "@typen/nullish": "^0.1.19"
+    "@typen/literal": "^0.2.0",
+    "@typen/nullish": "^0.2.0"
   },
   "repository": {
     "type": "git",
