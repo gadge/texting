@@ -8,6 +8,7 @@
   "type": "module",
   "scripts": {
     "upint": "pnpm up -i -r --latest",
+    "check": "pnpm outdated",
     "changeset-add": "pnpm changeset add",
     "changeset-ver": "pnpm changeset version",
     "changeset-pub": "pnpm changeset publish",
