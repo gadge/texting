@@ -1,6 +1,6 @@
-import { init }   from '@vect/vector-init'
+import { init }  from '@vect/vector-init'
 import { SP }    from '@texting/enum-chars'
-import { value } from '../src/value'
+import { value } from '../src/value.js'
 
 const candidates = [
   ...init(8, i => 'A'.repeat(i + 1)),
@@ -28,6 +28,6 @@ const decode = (code) => {
 
 for (let x of candidates) {
   const val = value(x, x.length);
-  `[${x}] (${val}) (${decode(val)})` |> console.log
+  console.log(`[${x}] (${val}) (${decode(val)})`)
 }
 
