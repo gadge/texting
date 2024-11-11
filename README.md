@@ -6,7 +6,7 @@
 [![version](https://img.shields.io/npm/v/@texting/lange?logo=npm&style=flat-square)]()
 [![language](https://img.shields.io/github/languages/top/gadge/texting?logo=javascript&style=flat-square)][url-github]
 [![manager](https://img.shields.io/badge/manager-pnpm-F69220?logo=pnpm&logoColor=EEE&style=flat-square)][url-github]
-[![npm last update](https://img.shields.io/npm/last-update/%40vect%2Fvector?logo=npm&style=flat-square)]()
+[![npm last update](https://img.shields.io/npm/last-update/@texting/lange?logo=npm&style=flat-square)]()
 [![github last commit](https://img.shields.io/github/last-commit/gadge/texting?logo=github&style=flat-square)][url-github]
 [![github commits](https://img.shields.io/github/commit-activity/t/gadge/texting?logo=github&style=flat-square)][url-github]
 [![node version](https://img.shields.io/node/v/@texting/lange/latest?logo=node.js&style=flat-square)]()
