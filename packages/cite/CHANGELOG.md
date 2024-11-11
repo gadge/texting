@@ -1,5 +1,14 @@
 # @texting/cite
 
+## 0.2.2
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @texting/quote@0.2.2
+  - @texting/translator@0.2.2
+
 ## 0.2.1
 
 ### Patch Changes

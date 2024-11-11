@@ -1,5 +1,13 @@
 # @texting/splitter
 
+## 0.2.2
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @texting/regex-phrasing@0.2.2
+
 ## 0.2.1
 
 ### Patch Changes

@@ -1,5 +1,15 @@
 # @texting/charset-halfwidth
 
+## 0.2.2
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @texting/enum-chars-fullwidth@0.2.2
+  - @texting/regex-charset@0.2.2
+  - @texting/charset-ansi@0.2.2
+
 ## 0.2.1
 
 ### Patch Changes

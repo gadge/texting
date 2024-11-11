@@ -1,5 +1,11 @@
 # @texting/enum-chars
 
+## 0.2.2
+
+### Patch Changes
+
+- minor fix
+
 ## 0.2.1
 
 ### Patch Changes

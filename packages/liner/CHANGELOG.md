@@ -1,5 +1,15 @@
 # @texting/liner
 
+## 0.2.2
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @texting/enum-brackets@0.2.2
+  - @texting/enum-chars@0.2.2
+  - @texting/bracket@0.2.2
+
 ## 0.2.1
 
 ### Patch Changes
