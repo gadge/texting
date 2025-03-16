@@ -1,4 +1,4 @@
-import { value } from './value'
+import { value } from './value.js'
 
 const B24 = 0x1000000
 const valFF1 = x => x.charCodeAt(0)
