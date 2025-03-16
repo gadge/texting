@@ -29,10 +29,23 @@ export function foldToVector(text) {
 
 export function fold(text) { return foldToVector.call(this, text).join(this?.delim ?? LF) }
 
-export const FoldToVector = ({ width, regex, firstLineIndent }) => {
-  return foldToVector.bind({ width, regex, firstLineIndent })
-}
 // { width, delim, regex, firstLineIndent }
-export const Fold = (conf) => {
-  return fold.bind(conf)
-}
+
+/**
+ * @param {number} [config.width=80]
+ * @param {RegExp} [config.regex=RSP]
+ * @param {number} [config.firstLineIndent=0]
+ * @returns {function(string):string[]}
+ * @constructor
+ */
+export const FoldToVector = (config) => foldToVector.bind(config)
+
+/**
+ * @param {number} [config.width=80]
+ * @param {string} [config.delim=LF]
+ * @param {RegExp} [config.regex=RSP]
+ * @param {number} [config.firstLineIndent]
+ * @returns {function(string):string}
+ * @constructor
+ */
+export const Fold = (config) => fold.bind(config)
