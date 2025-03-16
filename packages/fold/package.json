@@ -20,6 +20,9 @@
   "dependencies": {
     "@texting/enum-chars": "workspace:^"
   },
+  "devDependencies": {
+    "@texting/bracket": "workspace:^"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gadge/spare.git"

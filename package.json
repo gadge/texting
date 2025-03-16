@@ -23,13 +23,14 @@
     "@foba/vector-string": "^0.6.1",
     "@palett/says": "^0.9.10",
     "@rollup/plugin-json": "^6.1.0",
-    "@spare/deco": "^0.16.1",
-    "@spare/logger": "^0.16.1",
-    "@spare/xr": "^0.16.1",
+    "@spare/deco": "^0.16.6",
+    "@spare/deco-vector": "^0.16.6",
+    "@spare/logger": "^0.16.6",
+    "@spare/xr": "^0.16.6",
     "@valjoux/strategies": "^0.4.0",
     "@valjoux/timestamp-pretty": "^0.4.0",
     "@vect/vector-init": "^0.8.0",
-    "rollup": "^4.25.0",
+    "rollup": "^4.34.9",
     "rollup-plugin-fileinfo": "^0.3.4"
   }
 }

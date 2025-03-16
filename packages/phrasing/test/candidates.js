@@ -6,5 +6,7 @@ export const candidates = {
   initials: 'A-B-C.BETA',
   jdwKebab: 'janes-defense-weekly',
   cp2077: 'THE_CYBER-PUNK.2077 cdpr',
-  dior: 'ChristianDiorSS21'
+  dior: 'ChristianDiorSS21',
+  riccardo: 'Riccardo Tisci',
+  adjaye:'david adjaye'
 }

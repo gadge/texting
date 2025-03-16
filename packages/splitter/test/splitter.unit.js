@@ -1,7 +1,6 @@
-import { deco }     from '@spare/deco'
-import { says }     from '@spare/logger'
-import { LITERAL }  from '@texting/regex-phrasing'
-import { splitter } from '../src/splitter'
+import { decoVector, says } from '@spare/logger'
+import { LITERAL }          from '@texting/regex-phrasing'
+import { splitter }         from '../src/splitter.js'
 
 export const candidates = {
   simple: 'foo',
@@ -13,10 +12,10 @@ export const candidates = {
   method: 'sendHTTPRequestAsync ',
   numbers: '256.512.1024.2048',
   url: 'https://www.foo-bar.com/main?format=json&slice=20',
-  camel: 'fooBarROCKAndROLL李白杜甫ZenNASALiteDB',
+  camel: 'fooBarROCKAndROLL李白杜甫ZenNASALiteDB'
 }
 
 
 for (let [ key, word ] of Object.entries(candidates)) {
-  splitter.call(LITERAL, word) |> deco |> says[key]
+  says[key](decoVector(splitter.call(LITERAL, word), { delim: ', ' }))
 }
