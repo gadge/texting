@@ -1,6 +1,6 @@
 {
   "name": "@texting/charset-fullwidth",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Convert between half-width and full-width",
   "type": "module",
   "exports": "./index.js",
@@ -18,11 +18,8 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@texting/charset-ansi": "workspace:^",
     "@texting/enum-chars": "workspace:^",
-    "@texting/enum-chars-fullwidth": "workspace:^",
-    "@texting/lange": "workspace:^",
-    "@texting/regex-charset": "^0.2.3",
+    "@texting/regex-charset": "^0.2.4",
     "@typen/num-strict": "^0.2.0"
   },
   "repository": {

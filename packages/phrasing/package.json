@@ -1,6 +1,6 @@
 {
   "name": "@texting/phrasing",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Convert among snake/kebab/camel/pascal phrasings",
   "type": "module",
   "exports": "./index.js",

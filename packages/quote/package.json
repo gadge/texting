@@ -1,6 +1,6 @@
 {
   "name": "@texting/quote",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Add quotation mark to string",
   "type": "module",
   "exports": "./index.js",

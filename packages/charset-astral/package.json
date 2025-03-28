@@ -1,6 +1,6 @@
 {
   "name": "@texting/charset-astral",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Regex sets",
   "type": "module",
   "exports": "./index.js",

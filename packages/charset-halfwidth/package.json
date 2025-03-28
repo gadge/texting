@@ -1,6 +1,6 @@
 {
   "name": "@texting/charset-halfwidth",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Regex sets",
   "type": "module",
   "exports": "./index.js",
@@ -19,8 +19,7 @@
   },
   "dependencies": {
     "@texting/charset-ansi": "workspace:^",
-    "@texting/enum-chars-fullwidth": "workspace:^",
-    "@texting/regex-charset": "workspace:^"
+    "@texting/enum-chars-fullwidth": "workspace:^"
   },
   "repository": {
     "type": "git",

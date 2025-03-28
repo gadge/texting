@@ -1,9 +1,7 @@
 import { hasAnsi, clearAnsi } from '@texting/charset-ansi';
 import { SP } from '@texting/enum-chars-fullwidth';
-import '@texting/regex-charset';
 
 const DELTA_FULL = 0xfee0;
-
 const LEAN_REG = /(\W)\s+/g;
 
 /**
