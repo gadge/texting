@@ -1,86 +1,40 @@
-import { decoVector } from '@spare/deco-vector';
 import { SP } from '@texting/enum-chars';
-import { wordsToCamel, wordsToPascal } from '@texting/phrasing';
+import { toLower, wordsToCamel, wordsToPascal } from '@texting/phrasing';
 
-function xy(a, b, de = SP) {
-  return a?.length
-    ? b?.length ? a + de + b : a
-    : b?.length ? b : ''
+function tap(...words) {
+  const vec = [];
+  for (let word of words) if (word?.length) vec.push(word);
+  return vec
 }
 
-function xyz(a, b, c, de = SP) {
-  return a?.length
-    ? b?.length
-      ? c?.length
-        ? a + de + b + de + c : a + de + b
-      : c?.length
-        ? a + de + c : a
-    : b?.length
-      ? c?.length
-        ? b + de + c : b
-      : c?.length
-        ? c : ''
+function mag(...words) {
+  const de = this ?? SP, hi = words?.length;
+  let tx, ph, i = 0;
+  while (i < hi) if ((ph = words[i++])?.length) {
+    tx = ph;
+    break
+  }
+  while (i < hi) if ((ph = words[i++])?.length) {
+    tx += de + ph;
+  }
+  return tx
 }
 
-const tap = (...words) => {
-  const ve = [];
-  for (let word of words)
-    if (word?.length)
-      ve.push(word);
-  return ve
-};
+function tapBy(de = SP, ...words) {
+  const vec = tap.apply(null, words);
+  return vec.join(de)
+}
 
-const tapBy = function (delim = SP, ...words) {
-  const ve = tap.apply(null, words);
-  return ve.join(delim)
-};
+function tapDot(...words) { return mag.apply(this ?? '.', words) }
 
-const tapDot = function (...words) {
-  const delim = this?.delim ?? '.';
-  const ve = tap.apply(null, words);
-  return ve.join(delim)
-};
+function tapPath(...words) { return mag.apply(this ?? '\\', words) }
 
-const tapSnake = function (...words) {
-  const delim = this?.delim ?? '_';
-  const ve = tap.apply(null, words);
-  return ve.join(delim)
-};
+function tapSnake(...words) { return mag.apply(this ?? '_', words) }
 
-const tapCamel = function (...words) {
-  const ve = tap.apply(null, words);
-  return wordsToCamel(ve).join('')
-};
+function tapKebab(...words) { return tap.apply(null, words).map(toLower).join(this ?? '-') }
 
-const tapPascal = function (...words) {
-  const ve = tap.apply(null, words);
-  return wordsToPascal(ve).join('')
-};
+function tapCamel(...words) { return wordsToCamel(tap.apply(null, words)).join('') }
 
-const presetAdjoin = p => {
-  p = p ?? {};
-  p.delim = p.delim ?? SP;
-  return p
-};
+function tapPascal(...words) { return wordsToPascal(tap.apply(null, words)).join('') }
 
-const adjoin = function (...words) {
-  const
-    ve = tap.apply(null, words),
-    config = presetAdjoin(this);
-  return decoVector(ve, config)
-};
-
-/**
- *
- * @param {Object} p
- *
- * @param {string} [p.delim=',\n']
- * @param {boolean|number} [p.bracket=true] - BRK = 1
- * @param {Function} [p.read]
- * @param {Object|Object[]} [p.presets=[FRESH, JUNGLE]]
- *
- * @returns {Function}
- */
-const Adjoin = (p = {}) => adjoin.bind(p);
-
-export { Adjoin, adjoin, tap, tapBy, tapCamel, tapDot, tapPascal, tapSnake, xy, xyz };
+export { mag, tap, tapBy, tapCamel, tapDot, tapKebab, tapPascal, tapPath, tapSnake };
