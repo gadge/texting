@@ -1,7 +1,7 @@
 import { says }        from '@spare/logger'
 import { SP }          from '@texting/enum-chars'
 import { init }        from '@vect/vector-init'
-import { stringValue } from '../src/stringValue'
+import { stringValue } from '../src/stringValue.js'
 
 export const test = () => {
   const candidates = [

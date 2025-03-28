@@ -1,5 +1,11 @@
 # @texting/regex-charset
 
+## 0.2.3
+
+### Patch Changes
+
+- minor fix
+
 ## 0.2.2
 
 ### Patch Changes

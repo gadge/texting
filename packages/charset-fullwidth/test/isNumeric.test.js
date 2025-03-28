@@ -1,6 +1,6 @@
 import { logger, xr }   from '@spare/logger'
 import { halfToFull }   from '@texting/charset-halfwidth'
-import { REG_NUM_FULL } from '../assets/regex'
+import { REG_NUM_FULL } from '../assets/regex.js'
 
 const REGEX_NUMERIC_HALF = /^-?\d*\.?\d+$/
 const REGEX_NUMERIC_THOUSAND_SEPARATOR_HALF = /^\d{1,3}(,\d{3})*(\.\d+)?$/

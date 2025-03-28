@@ -1,4 +1,4 @@
-import { xyz } from '../src/tap'
+import { xyz } from '../src/tap.js'
 
 const A = 'a', B = 'b', C = 'c', _ = ''
 

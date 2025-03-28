@@ -8,7 +8,7 @@ import { DecoFlat }          from '@spare/deco-flat'
 import { decoCrostab }       from '@spare/logger'
 import { parenth }           from '@texting/bracket'
 import { strategies }        from '@valjoux/strategies'
-import { splitter }          from '../src/splitter'
+import { splitter }          from '../src/splitter.js'
 
 const [, movieQuote] = EntriesCollection.MovieQuotes |> flop
 const [, shakesQuote] = EntriesCollection.ShakesQuote |> flop

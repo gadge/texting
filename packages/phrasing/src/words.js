@@ -1,5 +1,5 @@
 import { mutate }     from '@vect/vector-mapper'
-import { capitalize } from './case'
+import { capitalize } from './case.js'
 
 export const wordsToCamel = words => {
   let i = 0, l = words?.length

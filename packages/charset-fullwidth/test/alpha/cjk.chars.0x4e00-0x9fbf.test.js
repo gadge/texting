@@ -3,7 +3,7 @@ import { LF }                from '@texting/enum-chars'
 import { logNeL, xr }        from '@spare/logger'
 import { range }             from '@vect/vector-init'
 import { shuffle }           from '@vect/vector-select'
-import { codeToHex, toChar } from '../utils/toChar'
+import { codeToHex, toChar } from '../utils/toChar.js'
 
 // range.dec: [19968, 40895]
 // range.hex: [0x4E00, 0x9FBF]

@@ -1,7 +1,7 @@
 import { says }              from '@palett/says'
 import { Xr }                from '@spare/logger'
 import { range }             from '@vect/vector-init'
-import { codeToHex, toChar } from '../utils/toChar'
+import { codeToHex, toChar } from '../utils/toChar.js'
 
 // range.dec: [8192, 8303]
 // range.hex: [0x2000, 0x206F]

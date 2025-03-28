@@ -1,4 +1,4 @@
-import { COMMA } from './comma'
+import { COMMA } from './comma.js'
 
 const validate = (x, y) => isNaN(x - y) ? NaN : y
 

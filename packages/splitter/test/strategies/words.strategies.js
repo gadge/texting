@@ -2,9 +2,9 @@ import { makeEmbedded }              from '@foba/util'
 import { decoCrostab, logger, says } from '@spare/logger'
 import { strategies }                from '@valjoux/strategies'
 import { dateTime }                  from '@valjoux/timestamp-pretty'
-import { wordsByIter }               from './src/wordsByIter'
-import { wordsByMatch }              from './src/wordsByMatch'
-import { wordsBySplit }              from './src/wordsBySplit'
+import { wordsByIter }               from './src/wordsByIter.js'
+import { wordsByMatch }              from './src/wordsByMatch.js'
+import { wordsBySplit }              from './src/wordsBySplit.js'
 
 const test = () => {
   const { lapse, result } = strategies({

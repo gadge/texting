@@ -1,10 +1,10 @@
 import { makeEmbedded }      from '@foba/util'
 import { decoCrostab, says } from '@spare/logger'
 import { strategies }        from '@valjoux/strategies'
-import { CAPREST, WORD }     from '../../output/regexes'
-import { wordToCap }         from '../../src/wordToCap'
-import { candidates }        from '../candidates'
-import { mutativePascal }    from './functions/dashedToCamel'
+import { CAPREST, WORD }     from '../../output/regexes.js'
+import { wordToCap }         from '../../src/wordToCap.js'
+import { candidates }        from '../candidates.js'
+import { mutativePascal }    from './functions/dashedToCamel.js'
 
 const { lapse, result } = strategies({
   repeat: 2E+5,

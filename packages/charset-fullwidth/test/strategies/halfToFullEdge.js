@@ -1,5 +1,5 @@
 import { SP }                   from '@texting/enum-chars-fullwidth'
-import { DELTA_FULL, REG_HALF } from '../../assets/regex'
+import { DELTA_FULL, REG_HALF } from '../../assets/regex.js'
 
 /**
  * Half-angle string -> Full-angle string

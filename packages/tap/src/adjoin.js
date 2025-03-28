@@ -1,6 +1,6 @@
 import { decoVector } from '@spare/deco-vector'
 import { SP }         from '@texting/enum-chars'
-import { tap }        from './tap'
+import { tap }        from './tap.js'
 
 const presetAdjoin = p => {
   p = p ?? {}

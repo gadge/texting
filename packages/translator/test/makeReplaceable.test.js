@@ -1,6 +1,6 @@
 import { says }            from '@spare/logger'
 import { quote }           from '@texting/quote'
-import { MakeReplaceable } from '../src/makeReplaceable'
+import { MakeReplaceable } from '../src/makeReplaceable.js'
 
 const dict = [
   [/e/g, 'a'],

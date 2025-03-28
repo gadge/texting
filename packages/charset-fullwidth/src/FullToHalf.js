@@ -1,5 +1,5 @@
 import { CO, DOT, SP } from '@texting/enum-chars'
-import { REG_FULL }    from '../assets/regex'
+import { REG_FULL }    from '../assets/regex.js'
 
 
 /**

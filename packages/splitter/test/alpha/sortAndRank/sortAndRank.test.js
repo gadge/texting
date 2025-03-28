@@ -4,8 +4,8 @@ import { fluoVector }         from '@palett/fluo-vector'
 import { DecoMatrix, says }   from '@spare/logger'
 import { isNumeric }          from '@typen/num-loose'
 import { splitter }           from '../../../dist/index.esm'
-import { candidates }         from '../candidates'
-import { LITERAL }            from '../splitter/regexps'
+import { candidates }         from '../candidates.js'
+import { LITERAL }            from '../splitter/regexps.js'
 
 for (let [key, value] of Object.entries(candidates)) {
   const vec = splitter(value, LITERAL)

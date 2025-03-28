@@ -1,4 +1,4 @@
-import { COMMA } from './comma'
+import { COMMA } from './comma.js'
 
 export const isNumeric = x => {
   x = x?.replace(COMMA, '')

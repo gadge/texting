@@ -2,9 +2,9 @@ import { makeEmbedded }                 from '@foba/util'
 import { decoCrostab, says }            from '@spare/logger'
 import { DASH_CAPREST, INIWORD, WORD }  from '@texting/regex-phrasing'
 import { strategies } from '@valjoux/strategies'
-import { capitalize } from '../../src/case'
-import { candidates } from '../candidates'
-import { byReplace, classic, mutative } from './functions/dashedToCamel'
+import { capitalize } from '../../src/case.js'
+import { candidates } from '../candidates.js'
+import { byReplace, classic, mutative } from './functions/dashedToCamel.js'
 
 const { lapse, result } = strategies({
   repeat: 2E+5,

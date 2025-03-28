@@ -1,5 +1,5 @@
 import { LF }    from '@texting/enum-chars'
-import { SPACE } from '../../../resources/space'
+import { SPACE } from '../../../resources/space.js'
 
 export const foldDev = function (sentence) {
   const { width = 80, delim = LF, regex = SPACE } = this ?? {}

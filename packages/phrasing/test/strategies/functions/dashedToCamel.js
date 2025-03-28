@@ -1,5 +1,5 @@
-import { wordsToCamel, wordsToPascal } from '../../../src/words'
-import { wordToCap }                   from '../../../src/wordToCap'
+import { wordsToCamel, wordsToPascal } from '../../../src/words.js'
+import { wordToCap }                   from '../../../src/wordToCap.js'
 
 export const DASHED = /[A-Za-z\d]+/g
 

@@ -3,9 +3,9 @@ import { DecoCrostab, decoCrostab } from '@spare/logger'
 import { says }                     from '@spare/xr'
 import { makeEmbedded }             from '@foba/util'
 import { strategies }               from '@valjoux/strategies'
-import { stringValue }              from '../src/alpha'
+import { stringValue }              from '../src/alpha.js'
 import { mapper }                   from '@vect/vector-mapper'
-import { value }                    from '../src/value'
+import { value }                    from '../src/value.js'
 import { values }                   from '../src/values.js'
 
 const { lapse, result } = strategies({

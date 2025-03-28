@@ -1,4 +1,4 @@
-import { ANSI, ASTRAL, HAN } from './oneoff'
+import { ANSI, ASTRAL, HAN } from './oneoff.js'
 
 // export const assets = new RegExp([...ansi, ...astral].join('|'), 'g')
 

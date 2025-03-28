@@ -1,5 +1,5 @@
-import { sortKeysByLength } from '../utils/sortKeysByLength'
-import { makeReplaceable }  from './makeReplaceable'
+import { sortKeysByLength } from '../utils/sortKeysByLength.js'
+import { makeReplaceable }  from './makeReplaceable.js'
 
 export class Translator {
   constructor(dictionary) {

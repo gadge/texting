@@ -4,11 +4,11 @@ import { delogger }                               from '@spare/deco'
 import { decoCrostab, decoSamples, logger, says } from '@spare/logger'
 import { strategies }                             from '@valjoux/strategies'
 import { dateTime }                               from '@valjoux/timestamp-pretty'
-import { candidates }                             from '../candidates'
-import { foldArc }                                from './src/foldArc'
-import { foldDev }                                from './src/foldDev'
-import { foldEdg }                                from './src/foldEdg'
-import { foldZen }                                from './src/foldZen'
+import { candidates }                             from '../candidates.js'
+import { foldArc }                                from './src/foldArc.js'
+import { foldDev }                                from './src/foldDev.js'
+import { foldEdg }                                from './src/foldEdg.js'
+import { foldZen }                                from './src/foldZen.js'
 
 const test = () => {
   const { lapse, result } = strategies({

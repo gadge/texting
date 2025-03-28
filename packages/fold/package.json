@@ -1,11 +1,11 @@
 {
   "name": "@texting/fold",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Split one line of words into lines",
   "type": "module",
-  "exports": "./dist/index.js",
+  "exports": "./index.js",
   "files": [
-    "dist"
+    "index.js"
   ],
   "engines": {
     "node": ">=22.0.0"

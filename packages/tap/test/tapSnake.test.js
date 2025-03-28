@@ -1,5 +1,5 @@
 import { delogger } from '@spare/deco'
-import { tapSnake } from '../src/tap'
+import { tapSnake } from '../src/tap.js'
 
 const candidates = [
   undefined,

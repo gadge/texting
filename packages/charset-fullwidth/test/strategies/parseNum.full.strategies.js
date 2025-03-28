@@ -3,9 +3,9 @@ import { decoCrostab, logger }        from '@spare/logger'
 import { parseNum as parseNumStrict } from '@typen/num-strict'
 import { strategies }                 from '@valjoux/strategies'
 import { init }                       from '@vect/vector-init'
-import { REG_FULL }                   from '../../assets/regex'
-import { CharConv, FullToHalf }       from '../../src/FullToHalf'
-import { parseNum }                   from '../../src/isNumeric'
+import { REG_FULL }                   from '../../assets/regex.js'
+import { CharConv, FullToHalf }       from '../../src/FullToHalf.js'
+import { parseNum }                   from '../../src/isNumeric.js'
 
 
 class FullToNumParser {

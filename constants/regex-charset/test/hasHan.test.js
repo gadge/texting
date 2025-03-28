@@ -1,6 +1,6 @@
 import { says }                   from '@palett/says'
 import { decoString, logNeL, Xr } from '@spare/logger'
-import { HAN }                    from '../resources/oneoff'
+import { HAN }                    from '../resources/oneoff.js'
 
 const candidates = [
   'Taco青年',

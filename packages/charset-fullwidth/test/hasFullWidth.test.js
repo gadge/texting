@@ -1,5 +1,5 @@
 import { delogger } from '@spare/deco'
-import { hasFull }  from '../src/hasFull'
+import { hasFull }  from '../src/hasFull.js'
 
 const vec = [
   'foo',

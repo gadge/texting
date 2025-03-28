@@ -1,5 +1,5 @@
 import { LF }    from '@texting/enum-chars'
-import { SPACE } from '../../../resources/space'
+import { SPACE } from '../../../resources/space.js'
 
 export const foldToVector = function (text) {
   const { width = 80, regex = SPACE, firstLineIndent } = this ?? {}

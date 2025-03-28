@@ -1,6 +1,6 @@
 import { delogger } from '@spare/deco'
 import { COSP }     from '@texting/enum-chars'
-import { tap }      from '../src/tap'
+import { tap }      from '../src/tap.js'
 
 const test = () => {
   const title = ''

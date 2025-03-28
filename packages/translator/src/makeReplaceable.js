@@ -1,4 +1,4 @@
-import { sortKeysByLength } from '../utils/sortKeysByLength'
+import { sortKeysByLength } from '../utils/sortKeysByLength.js'
 
 export const makeReplaceable = function (dict) {
   if (this?.sort) sortKeysByLength(dict)

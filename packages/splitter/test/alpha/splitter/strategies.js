@@ -2,10 +2,10 @@ import { makeEmbedded }      from '@foba/util'
 import { decoCrostab, says } from '@spare/logger'
 import { LITERAL }           from '@texting/regex-phrasing'
 import { strategies }        from '@valjoux/strategies'
-import { splitter }          from '../../../index'
-import { candidates }        from '../candidates'
-import { decoStringIter }    from './iterate'
-import { WORDREG }           from './regexps'
+import { splitter }          from '../../../index.js'
+import { candidates }        from '../candidates.js'
+import { decoStringIter }    from './iterate.js'
+import { WORDREG }           from './regexps.js'
 
 const SPLIT_REG = /(?<=\W+|_+)|(?=\W+|_+)/g
 

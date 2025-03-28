@@ -1,4 +1,4 @@
-import { REG_NUM_FULL } from '../assets/regex'
+import { REG_NUM_FULL } from '../assets/regex.js'
 
 /**
  *

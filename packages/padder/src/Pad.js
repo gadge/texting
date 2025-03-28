@@ -2,7 +2,7 @@ import { SP }        from '@texting/enum-chars'
 import { isNumeric } from '@typen/num-strict'
 import { fix }   from '../utils/ansiPadLength.js'
 import { lpad }  from './LPad.js'
-import { clean } from '../utils/clean'
+import { clean } from '../utils/clean.js'
 import { rpad }  from './RPad.js'
 
 export const pad = function (tx, wd, va) {

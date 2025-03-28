@@ -1,6 +1,6 @@
 import { logger, Xr }  from '@spare/logger'
-import { clearAstral } from '../src/clearAstral'
-import { hasAstral }   from '../src/hasAstral'
+import { clearAstral } from '../src/clearAstral.js'
+import { hasAstral }   from '../src/hasAstral.js'
 
 const candidates = [
   'tora',

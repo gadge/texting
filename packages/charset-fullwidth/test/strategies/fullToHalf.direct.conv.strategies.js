@@ -2,9 +2,9 @@ import { says }        from '@palett/says'
 import { decoCrostab } from '@spare/logger'
 import { strategies }  from '@valjoux/strategies'
 import { init }        from '@vect/vector-init'
-import { REG_FULL }    from '../../assets/regex'
-import { FullToHalf }  from '../../src/FullToHalf'
-import { parseNum }    from '../../src/isNumeric'
+import { REG_FULL }    from '../../assets/regex.js'
+import { FullToHalf }  from '../../src/FullToHalf.js'
+import { parseNum }    from '../../src/isNumeric.js'
 
 const NUM_FULL = /[\uff0b-\uff19]/g
 const NUM_FULL_G = /[\uff0b-\uff19]+/g

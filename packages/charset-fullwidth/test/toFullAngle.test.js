@@ -1,6 +1,6 @@
 import { says }      from '@palett/says'
 import { xr }         from '@spare/logger'
-import { halfToFull } from '../index'
+import { halfToFull } from '../index.js'
 
 const candidates = [
   '[电子制造, 电子 ][　苹果概念　]',

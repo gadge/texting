@@ -1,7 +1,7 @@
-export const sepByLast = function (text) {
+export function stub(text) {
   const regex = this
   let ms, l = 0, r = 0
-  while (( ms = regex.exec(text) )) {
+  while ((ms = regex.exec(text))) {
     r = ms.index
     l = regex.lastIndex
   }

@@ -1,4 +1,4 @@
-import { ansi, astral, han } from './elements'
+import { ansi, astral, han } from './elements.js'
 
 export const ANSI = new RegExp(ansi.join('|'))
 export const ASTRAL = new RegExp(astral.join('|'))

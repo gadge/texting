@@ -1,5 +1,5 @@
 import { says }            from '@spare/logger'
-import { makeReplaceable } from '../../src/makeReplaceable'
+import { makeReplaceable } from '../../src/makeReplaceable.js'
 
 const rawDict = [
   [/e/g, 'a'],

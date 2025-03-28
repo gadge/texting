@@ -4,9 +4,9 @@ import { delogger }                     from '@spare/deco'
 import { SP }                           from '@texting/enum-chars-fullwidth'
 import { decoCrostab, decoSamples }     from '@spare/logger'
 import { strategies }                   from '@valjoux/strategies'
-import { DELTA_FULL, REG_SP, REG_HALF } from '../../assets/regex'
-import { toFull }                       from '../../src/core/toFull'
-import { fracture }                     from '../utils/matches'
+import { DELTA_FULL, REG_SP, REG_HALF } from '../../assets/regex.js'
+import { toFull }                       from '../../src/core/toFull.js'
+import { fracture }                     from '../utils/matches.js'
 
 const toFullComplexReg = function (text) {
   let n

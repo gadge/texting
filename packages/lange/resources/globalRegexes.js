@@ -1,4 +1,4 @@
-import { ansi, astral, han } from './elements'
+import { ansi, astral, han } from './elements.js'
 
 // export const assets = new RegExp([...ansi, ...astral].join('|'), 'g')
 

@@ -1,4 +1,4 @@
-import { CJK_LETTERS, CJK_PUNCS, FULL_CHARS } from './elements'
+import { CJK_LETTERS, CJK_PUNCS, FULL_CHARS } from './elements.js'
 
 const ESC = '\u{1B}'
 const CSI = '\u{9B}'

@@ -3,7 +3,7 @@ import { Vinylize }           from '@flua/vinylize'
 import { decoString, logger } from '@spare/logger'
 import { timeout }            from '@valjoux/timeout'
 import gulp                   from 'gulp'
-import { cite }               from '../src/cite'
+import { cite }               from '../src/cite.js'
 
 const candidates = {
   alpha: '\'------\'foo\'------\n++++++\'bar\'++++++\'',

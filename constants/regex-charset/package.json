@@ -1,11 +1,11 @@
 {
   "name": "@texting/regex-charset",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Regex sets",
   "type": "module",
-  "exports": "./dist/index.js",
+  "exports": "./index.js",
   "files": [
-    "dist"
+    "index.js"
   ],
   "publishConfig": {
     "access": "public"

@@ -1,11 +1,11 @@
 {
   "name": "@texting/sep",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Separate string into two",
   "type": "module",
-  "exports": "./dist/index.js",
+  "exports": "./index.js",
   "files": [
-    "dist"
+    "index.js"
   ],
   "engines": {
     "node": ">=22.0.0"

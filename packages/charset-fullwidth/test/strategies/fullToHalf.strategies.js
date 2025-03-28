@@ -1,7 +1,7 @@
 import { says }                       from '@palett/says'
 import { decoCrostab, decoSamples }   from '@spare/logger'
 import { strategies }             from '@valjoux/strategies'
-import { CharCodeToHalf, toHalf } from '../../src/core/toHalf'
+import { CharCodeToHalf, toHalf } from '../../src/core/toHalf.js'
 
 const toHalfSimpleReg = function (text) {
   return text?.replace(/[Ａ-Ｚａ-ｚ０-９]/g, s => String.fromCharCode(s.charCodeAt(0) - 0xFEE0))

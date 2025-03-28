@@ -2,7 +2,7 @@ import { says }              from '@palett/says'
 import { LF }                from '@texting/enum-chars'
 import { logger, xr }        from '@spare/logger'
 import { range }             from '@vect/vector-init'
-import { codeToHex, toChar } from '../utils/toChar'
+import { codeToHex, toChar } from '../utils/toChar.js'
 
 // range.dec: [65280, 65519]
 // range.hex: [0xFF00,  0xFFEF]

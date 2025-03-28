@@ -1,11 +1,6 @@
-export {
-  SP,
-  TB,
-  // CR,
-  // LF,
-  // RN,
-  DA,
-  DASH,
-  // ELLIP,
-  // AEU,
-} from './resources/chars'
+const SP = '　';
+const TB = '　　';
+const DASH = '－';
+const DA = '－';
+
+export { DA, DASH, SP, TB };

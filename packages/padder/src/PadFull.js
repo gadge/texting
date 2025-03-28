@@ -3,10 +3,10 @@ import { HalfToFull }                 from '@texting/charset-halfwidth'
 import { SP as SP_FULL }              from '@texting/enum-chars-fullwidth'
 import { nullish }                    from '@typen/nullish'
 import { isNumeric }                  from '@typen/num-strict'
-import { ansiPadLength }  from '../utils/ansiPadLength'
+import { ansiPadLength }  from '../utils/ansiPadLength.js'
 import { lpad }           from './LPad.js'
 import { rpad }           from './RPad.js'
-import { pad as padHalf } from './Pad'
+import { pad as padHalf } from './Pad.js'
 
 export const padFull = function (tx, wd, va) {
   const { ansi = true, fill = SP_FULL } = this ?? {}

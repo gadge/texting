@@ -1,5 +1,5 @@
 import { DA, LF } from '@texting/enum-chars'
-import { divide } from '../../../src/divide'
+import { divide } from '../../../src/divide.js'
 
 const SPACE = /\s+/g
 const NXL = /[\r\n\f]/

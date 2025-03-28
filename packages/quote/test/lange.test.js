@@ -1,6 +1,6 @@
 import { hasAnsi } from '@texting/lange'
 import { ASTRAL }  from '@texting/regex-charset'
-import { quote }   from '../index'
+import { quote }   from '../index.js'
 
 const list = [
   'tolstoy',

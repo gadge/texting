@@ -1,5 +1,5 @@
 import { logger } from '@spare/logger'
-import { Pad }    from '../src/Pad'
+import { Pad }    from '../src/Pad.js'
 
 const candidates = [
   'foo',

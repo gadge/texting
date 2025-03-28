@@ -2,7 +2,7 @@ import { strategies }   from '@valjoux/strategies'
 import { makeEmbedded } from '@foba/util'
 import { decoCrostab }  from '@spare/logger'
 import { says }         from '@spare/xr'
-import { stringValue }  from '../src/stringValue'
+import { stringValue }  from '../src/stringValue.js'
 
 function levenshtein(xt, yt) {
   let t = [], u, i, j

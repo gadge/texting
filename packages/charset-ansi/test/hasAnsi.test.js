@@ -1,6 +1,6 @@
 import { logger, Xr } from '@spare/logger'
-import { clearAnsi }  from '../src/clearAnsi'
-import { hasAnsi }    from '../src/hasAnsi'
+import { clearAnsi }  from '../src/clearAnsi.js'
+import { hasAnsi }    from '../src/hasAnsi.js'
 
 const candidates = [
   'tora',

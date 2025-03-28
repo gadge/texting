@@ -1,7 +1,7 @@
 import { says }              from '@palett/says'
 import { xr }                from '@spare/logger'
 import { range }             from '@vect/vector-init'
-import { codeToHex, toChar } from '../utils/toChar'
+import { codeToHex, toChar } from '../utils/toChar.js'
 
 export const astral = /[\uD800-\uDBFF][\uDC00-\uDFFF]/
 

@@ -1,7 +1,7 @@
 import { says }              from '@palett/says'
 import { Xr }                from '@spare/logger'
 import { range }             from '@vect/vector-init'
-import { codeToHex, toCode } from '../utils/toChar'
+import { codeToHex, toCode } from '../utils/toChar.js'
 
 const special = [
   ['　', ' ',],

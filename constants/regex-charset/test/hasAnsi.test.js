@@ -1,5 +1,5 @@
 import { logger, Xr }   from '@spare/logger'
-import { ANSI, ASTRAL } from '../resources/oneoff'
+import { ANSI, ASTRAL } from '../resources/oneoff.js'
 
 const arr = [
   'tora',
