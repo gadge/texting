@@ -1,5 +1,5 @@
 import { decoPale, logger } from '@spare/logger'
-import { sep }              from '../src/index.js'
+import { stub }             from '../src/index.js'
 
 export const candidates = [
   'a.b.c',
@@ -12,6 +12,6 @@ export const candidates = [
 ]
 
 for (let candidate of candidates) {
-  const pair = sep.call(/\s?\.\s?/, candidate)
+  const pair = stub.call(/\s?\.\s?/g, candidate)
   logger(decoPale(pair))
 }

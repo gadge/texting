@@ -1,6 +1,6 @@
 {
   "name": "@texting/charset-ansi",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "description": "Regex sets",
   "type": "module",
   "exports": "./index.js",

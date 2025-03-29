@@ -1,6 +1,6 @@
 {
   "name": "@texting/liner",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "description": "Join lines together",
   "type": "module",
   "exports": "./index.js",

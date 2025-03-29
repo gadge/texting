@@ -1,6 +1,6 @@
 {
   "name": "@texting/charset-fullwidth",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "description": "Convert between half-width and full-width",
   "type": "module",
   "exports": "./index.js",
@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@texting/enum-chars": "workspace:^",
-    "@texting/regex-charset": "^0.2.4",
+    "@texting/regex-charset": "^0.2.6",
     "@typen/num-strict": "^0.2.0"
   },
   "repository": {

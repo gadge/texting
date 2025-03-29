@@ -1,6 +1,6 @@
 {
   "name": "@texting/cite",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "description": "Process string for file write",
   "type": "module",
   "exports": "./index.js",

@@ -1,6 +1,6 @@
 {
   "name": "@texting/fold",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "description": "Split one line of words into lines",
   "type": "module",
   "exports": "./index.js",

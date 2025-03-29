@@ -29,8 +29,8 @@
     "@spare/xr": "^0.16.26",
     "@valjoux/strategies": "^0.4.4",
     "@valjoux/timestamp-pretty": "^0.4.4",
-    "@vect/vector-init": "^0.8.5",
-    "rollup": "^4.37.0",
+    "@vect/vector-init": "^0.8.6",
+    "rollup": "^4.38.0",
     "rollup-plugin-fileinfo": "^0.3.4"
   }
 }

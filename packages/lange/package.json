@@ -1,6 +1,6 @@
 {
   "name": "@texting/lange",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "description": "Get string length s.t. correcting astral codes and skipping ansi codes",
   "type": "module",
   "exports": "./index.js",

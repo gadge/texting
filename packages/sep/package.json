@@ -1,6 +1,6 @@
 {
   "name": "@texting/sep",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "description": "Separate string into two",
   "type": "module",
   "exports": "./index.js",
@@ -17,8 +17,7 @@
     "pub": "npm publish",
     "test": "node -r @babel/register test/test.index.js"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gadge/spare.git"
